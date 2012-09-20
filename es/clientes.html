@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRAC - Clientes</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="sarasa"> 
+	<meta name="keywords" content="sarasa"> 
+		
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="../styles/html5reset.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/global.css" />
+	<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.label_handle.js"></script>	
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	
+	
+	<!-- BACKGROUND RESIZABLE -->
+	<script src="http://www.google.com/jsapi"></script> <!-- necesario background resizable -->
+	<script src="../js/resize-banner.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".banner-container").ezBgResize({
+				img     : "../img/fd_clientes.jpg", // Relative path example.  You could also use an absolute url (http://...).
+				opacity : 1,//Opacity. 1 = 100%.  This is optional.
+				center  : false,// Boolean (true or false). This is optional. Default is true.
+				//imageHRatio : 0.1 // por defecto 1 (100% de alto)
+			});
+		});
+	</script>
+	<!-- FIN BACKGROUND RESIZABLE -->
+</head>
+<body>
+	<header>
+		<h1><a href="#" title=""><span class="DN">CRAC Agence</span></a></h1>
+	</header>
+	<nav>
+		<ul class="clearfix">
+			<li><a href="#" title="CRAC Agence" class="firs">CRAC Agence</a></li>
+			<li><a href="#" title="Portfolio">Portfolio</a></li>
+			<li><a href="#" title="Contacto">Contacto</a></li>
+			<li><a href="#" title="Blog">Blog</a></li>
+			<li><a href="#" title="Seguinos">Seguinos</a></li>
+			<li><a href="#" title="Clientes">Clientes</a></li>
+		</ul>
+		<ul class="connect-bar clearfix">
+			<li><a href="#" title="Skype" class="skype"><span class="DN">Crack Skype</span></a></li>
+			<li><a href="#" title="Helevation hotel" class="helevation-hotel"><span class="DN">Helevetation Hotel</span></a></li>
+			<li><a href="#" title="TDW" class="TDW"><span class="DN">TDW</span></a></li>
+		</ul>
+	</nav>
+	
+	<div class="content clientes clearfix">
+		<div class="banner-container"></div>
+		<div class="cont-border">
+			<div class="cont-title">
+				<h2>Nuestros clientes</h2>
+				<p>Las marcas que conf&iacute;an en nosotros</p>
+			</div>
+		</div>
+		<ul class="clearfix">
+			<li><a href="#" title="Pepsico" class="pepsico"><span class="DN">Pepsico</span></a></li>
+			<li><a href="#" title="3M" class="tres-m"><span class="DN">3M</span></a></li>
+			<li><a href="#" title="Monsanto imagine" class="monsanto"><span class="DN">Monsanto imagine</span></a></li>
+			<li><a href="#" title="La Caja" class="la-caja"><span class="DN">La Caja</span></a></li>
+			<li><a href="#" title="Vatel" class="vatel"><span class="DN">Vatel</span></a></li>
+			<li><a href="#" title="Roho" class="roho"><span class="DN">Roho</span></a></li>
+			<li><a href="#" title="L'Hotel Palermo" class="lhotel"><span class="DN">L'Hotel Palermo</span></a></li>
+		</ul>
+	</div>
+</body>
+</html>
