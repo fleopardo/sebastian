@@ -1,0 +1,149 @@
+@font-face {
+font-family: "quicksand-regular";
+src: url("../fonts/quicksand_book-webfont.eot");
+src: local("?"),
+url("../fonts/quicksand_book-webfont.woof") format("woff"),
+url("../fonts/quicksand_book-webfont.ttf") format("truetype"),
+url("../fonts/quicksand_book-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+font-family: "quicksand-light";
+src: url("../fonts/quicksand_light-webfont.eot");
+src: local("?"),
+url("../fonts/quicksand_light-webfont.woof") format("woff"),
+url("../fonts/quicksand_light-webfont.ttf") format("truetype"),
+url("../fonts/quicksand_light-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+font-family: "quicksand-bold";
+src: url("../fonts/quicksand_bold-webfont.eot");
+src: local("?"),
+url("../fonts/quicksand_bold-webfont.woof") format("woff"),
+url("../fonts/quicksand_bold-webfont.ttf") format("truetype"),
+url("../fonts/quicksand_bold-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+
+/*CLEARFIX*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+
+html{*overflow:hidden;}
+body{overflow:hidden;}
+
+.DN{display:none;}
+.noMarginRight{margin-right:0 !important;}
+
+header{position:absolute;z-index:1000;}
+header h1 {margin:0 0 30px 38px;padding-top:40px}
+header h1 a{display:block;width:223px;height:63px;background:url(../img/fd_logo.png) no-repeat;position:relative;z-index:10;}
+header h1 a.contactLogo{background:url(../img/fd_logoContact.png) no-repeat;height:67px;}
+
+.servicios{position: absolute; top: 0pt; width: 100%; height:100%;}
+
+/*NAVIGATOR*/
+nav{padding:0;margin:0;width:290px;position:absolute;z-index:1000;top:140px;}
+nav > ul > li{width:290px;background:url(../img/fd_nav.png) 0 0 repeat-x;}
+nav ul > li a{width:20px;padding: 0 30px 0 46px;text-align:right;}
+nav li{height:48px;position:relative;position:relative;z-index:0;}
+nav li.contSub{z-index:20;}
+nav li a{height:48px;color:#000;font:24px/48px quicksand-bold;display:block;background:url(../img/fd_sprite-iconos.png) no-repeat;}
+nav li a:hover{color:#fff;}
+nav li a.four{background-position:46px 9px;}
+nav li a.services{background-position:46px -32px;}
+nav li a.projects{background-position:46px -74px;}
+nav li a.contact{background-position:46px -119px;}
+nav li:hover a.four{background-position:46px -163px;}
+nav li:hover a.services{background-position:46px -204px;}
+nav li:hover a.projects{background-position:46px -246px;}
+nav li:hover a.contact{background-position:46px -290px;}
+nav .submenu{position:absolute;right:0;display:none;z-index:20;width:173px;}
+nav .submenu li {margin-bottom:0;width:173px;}
+nav .submenu li a{padding:0;text-align:center;background:none;width:173px;color:#000;}
+nav .submenu li a:hover{color:#fff;}
+/*FIN NAVIGATOR*/
+
+#home{position:relative; z-index:100;}
+
+/*feed RSS*/
+.feed{position:absolute;top:40px;right:0;z-index:1000;background:#4d4d4f;width:33px;padding:0 0;height:156px;}
+.feed > ul > li{position:relative;z-index:10;}
+.feed > ul > li a{position:relative;width:33px;z-index:10;display:block;}
+.feed #corneta{height:114px;background:#4D4D4F url(../img/fd_aside1.png) center 10px no-repeat;border-bottom:1px solid #949495;}
+.feed #rss{height:40px;background:#4D4D4F url(../img/fd_aside2.png) 7px 10px no-repeat;border-top:1px solid #fff;}
+.aside-desplegable{position:absolute;z-index:0;top:0;width:674px;height:136px;padding:10px 12px;background:#000;}
+.aside-desplegable li{float:left;width:114px;height:114px;padding:10px;background:#4d4d4f;margin-right:12px;}
+.aside-desplegable p{color:#e4e4e4;}
+.aside-desplegable li img{width:114px;height:72px;}
+
+/*PAGINADO INDEX*/
+.paginado{position: absolute; z-index: 10; right:33px;font:24px quicksand-light;}
+.paginado a{color:#231f20;}
+
+
+/*TEXTO ANIMADO SERVICES*/
+.txt-container{font-family:quicksand-regular;position:absolute;}
+.txt-container p{position:absolute;font-size:18px;line-height:26px;}
+#creativity .txt-container{background:url(../img/fd_services-creativity-txt.png) left bottom no-repeat;width:540px;height:428px;position:absolute;bottom:60px;right:60px;}
+#creativity .txt-container p{background:url(../img/fd_services-corazon-blanco.png) 0 8px no-repeat;color:#fff;font-size:16px;line-height:26px;width:257px;right:0;padding-left:18px;}
+
+#technology .txt-container{width:510px;height:456px;background:url(../img/fd_services-technology-txt.png) center top no-repeat;top:60px;right:60px;}
+#technology .txt-container p, #technology .txt-container h3, #technology .txt-container ul{position:absolute;left:266px;font-size:18px;line-height:28px;}
+#technology .txt-container p{top:134px;}
+#technology .txt-container h3{top:265px;font-family:quicksand-bold;}
+#technology .txt-container ul{top:292px;font-family:quicksand-regular;}
+#technology .txt-container ul a{color:#000;}
+
+#strategy .txt-container{width:773px;height:346px;background:url(../img/fd_services-strategy-txt.png) top right no-repeat;right:60px;bottom:60px;}
+#strategy .txt-container p{background:url(../img/fd_services-corazon-negro.png) 8px 6px no-repeat;padding-left:18px;width:412px;color:#000;text-align:right;top:190px;font-size:14px;line-height:24px;}
+
+#art .txt-container{bottom:60px;right:60px;width:765px;height:233px;background:url(../img/fd_services-art-txt.png) left no-repeat;}
+#art .txt-container p{color:#fff;width:313px;left:435px;}
+
+/*CONTACTO*/
+#contacto .cont-form{font-family:quicksand-bold;position:absolute;top:150px;right:150px; width: 446px;}
+#contacto .cont-form h3{background:url(../img/fd_title-contact.png) center no-repeat;color:#000;line-height:49px;font-size:20px;text-transform:uppercase;width:331px; text-align:center;margin-bottom:36px;}
+#contacto .cont-form .rows{margin-bottom:5px;}
+#contacto .cont-form label{display:block;float:left;color:#fff;text-transform:uppercase; font-size:13px;}
+#contacto .cont-form .rows input{border:none;background:url(../img/fd_sprite-inputs-contact.png) no-repeat;}
+#contacto .cont-form .rows.name-input input{height:35px;width:262px;background-position:0 0;}
+#contacto .cont-form .rows.work-input input{height:38px;width:253px;background-position:0 -45px;}
+#contacto .cont-form .rows.email-input input{height:36px;width:262px;background-position:0 -92px;}
+#contacto .cont-form .rows.phone-input input{height:36px;width:257px;background-position:0 -137px;}
+#contacto .cont-form .rows.more-input input{height:39px;width:245px;background-position:0 -184px;}
+
+#contacto .cont-form .rows.name-input label{margin-right:48px;line-height:35px;}
+#contacto .cont-form .rows.work-input label{margin-right:46px;line-height:38px;}
+#contacto .cont-form .rows.email-input label{margin-right:47px;line-height:36px;}
+#contacto .cont-form .rows.phone-input label{margin-right:41px;line-height:39px;}
+#contacto .cont-form .rows.more-input label{margin-right:37px;line-height:39px;}
+#contacto .cont-form .rows.select-input label{margin-right:5px;line-height:39px;}
+#contacto p{color:#fff;font:12px quicksand-regular;text-transform:uppercase;position:absolute;text-align:center;bottom:25px;width:100%;}
+
+
+/*CONTENT*/
+#content{background:#fff;}
+#content p{font-size:14px; line-height: 16px; position: relative; margin-bottom: 15px;}
+#content h3{font-size:21px; margin-bottom: 15px; text-transform: uppercase; font-family:"quicksand-bold";}
+#content p.ft{font-size:13px;line-height:16px;color:#fff;width:1000px;margin-left:100px;padding:12px 0 12px 12px;background:#000;position:absolute;bottom:2%;z-index:-2; margin-bottom:0;}
+
+#content .txt-container{top: 120px; display: block; right: 1000px; width:610px;}
+#content #textoIntro{background: #fff;}
+#content #news{height: 250px; width: 160px; padding: 20px; position: relative; float: left; border: 1px solid #666; background: #fff;}
+#content #scroll{height: 200px; padding-right:15px; overflow-y: auto;}
+#content #colDer{position: relative; float: left;  margin-left: 25px;}
+#content #colDer #redesSociales h3{text-align:center;}
+#content #colDer #redesSociales{width: 160px; height: 165px; padding:30px; background:url(../img/burbujaRedSociales.png) no-repeat;}
+
+#content #linksRedes{margin-top: 22px;}
+#content #linksRedes a{background:url(../img/icon_redes_sprite.png) no-repeat; width:30px; height:30px; display: block; float: left; margin-right:13px;}
+#content #linksRedes a.tweeter{background-position: 0 0; width:29px;}
+#content #linksRedes a.facebook{background-position: -29px 0;}
+#content #linksRedes a.blogger{background-position: -59px 0;}
+#content #linksRedes a.nose{background-position: -89px 0;}
+
+#downloadPortfolio{background: url(../img/download_portfolio.jpg) no-repeat; width: 165px; height: 44px; display: block; float:right; margin-top: 18px;}

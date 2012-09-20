@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4Four</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="sarasa"> 
+	<meta name="keywords" content="sarasa"> 
+		
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="styles/html5reset.css" />
+	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+	<link rel="stylesheet" type="text/css" href="styles/jquery.ui.selectmenu.css" />
+	<link rel="stylesheet" type="text/css" href="styles/jquery.jscrollpane.css" />
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>	
+	<script src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script src="js/jquery.ez-bg-resize.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/jquery.jscrollpane.min.js"></script>
+	
+	<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.selectmenu.js"></script>
+	<script type="text/javascript" src="js/selectmenu.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("body").ezBgResize({
+				img     : "img/im_home1.jpg", // Relative path example.  You could also use an absolute url (http://...).
+				//opacity : 1,Opacity. 1 = 100%.  This is optional.
+				center  : true // Boolean (true or false). This is optional. Default is true.
+			});
+
+		});
+		
+	</script>
+	
+	
+	
+	<!-- <link type="text/css" href="styles/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.mwheelIntent.js"></script>
+	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#news').jScrollPane();
+		});
+	</script> -->
+
+</head>
+<!--[if IE 7 ]> <body class="ie7"> <![endif]-->
+<!--[if !IE 7]><!--> <body> <!--<![endif]-->
+
+
+<div id="preload" style="position:absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff; z-index:10002;">
+	<img src="./img/loading-gif-animation.gif" width="100" height="100" />
+</div>
+
+<header>
+	<h1><a href="javascript:void(0)" title="home" class="index"><span class="DN">4Four</span></a></h1>
+</header>
+<nav>
+	<ul>
+		<li><a href="javascript:void(0)" title="content" class="four"><span class="DN">4four</span></a></li>
+		<li class="contSub"><a href="javascript:void(0)" title="services" class="services"><span class="DN">services</span></a>
+			<ul class="submenu">
+				<li><a href="javascript:void(0)" title="creativity">creativity</a></li>
+				<li><a href="javascript:void(0)" title="technology">technology</a></li>
+				<li><a href="javascript:void(0)" title="strategy">strategy</a></li>
+				<li><a href="javascript:void(0)" title="art">art dept.</a></li>
+			</ul>
+		</li>
+		<li><a href="javascript:void(0)" title="projects" class="projects"><span class="DN">projects</span></a></li>
+		<li><a href="javascript:void(0)" title="contacto" class="contact"><span class="DN">contact</span></a></li>
+	</ul>
+</nav>
+
+<div id="home">
+	<div class="feed">
+		<ul>
+			<li class="first"><a href="#" title="corneta" id="corneta"><span class="DN">Corneta</span></a>
+			<div class="aside-desplegable">
+				<ul class="clearfix" style="float:left;">
+					<li>
+						<img src="img/im_aside-desplegable.jpg" alt="" />
+						<p>fssdfsdf</p>
+						<p>fssdfsdf</p>
+					</li>
+					<li>
+						<img src="img/im_aside-desplegable.jpg" alt="" />
+						<p>fssdfsdf</p>
+						<p>fssdfsdf</p>
+					</li>
+					<li>
+						<img src="img/im_aside-desplegable.jpg" alt="" />
+						<p>fssdfsdf</p>
+						<p>fssdfsdf</p>
+					</li>
+					<li>
+						<img src="img/im_aside-desplegable.jpg" alt="" />
+						<p>fssdfsdf</p>
+						<p>fssdfsdf</p>
+					</li>
+				</ul>
+			</div>
+			</li>
+			<li><a href="#" title="Rss" id="rss"><span class="DN">Rss</span></a></li>
+		</ul>
+		
+	</div>
+	<div class="paginado">
+		<a href="javascript:void(0)" title="1">1</a>
+		<a href="javascript:void(0)" title="2">2</a>
+		<a href="javascript:void(0)" title="3">3</a>
+		<a href="javascript:void(0)" title="4">4</a>
+		<a href="javascript:void(0)" title="5">5</a>
+		<a href="javascript:void(0)" title="6">6</a>
+		<a href="javascript:void(0)" title="7">7</a>
+	</div>
+</div>
+
+<div id="technology" class="servicios">
+	
+	<div class="txt-container">
+		<p>We Specialize in<br />
+	Digital Tools<br />
+	Motion<br />
+	Backend Platform</p>
+		<h3>Come check us out</h3>
+		<ul>
+			<li><a href="#" title="">4digitaltools.com</a></li>
+			<li><a href="#" title="">4fouronline.com</a></li>
+			<li><a href="#" title="">4fourdynamics.com</a></li>
+			<li><a href="#" title="">4fourdinteractive.com</a></li>
+			<li><a href="#" title="">4fourdplatform.com</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="creativity" class="servicios">
+	<div class="txt-container">
+		<p>Transform your objetives into visual concepts and your values with accurancy ... and style!
+	Design a logo to create your image for campaings , catalogs... All you need to create your designs.
+	We love graphics. 
+	We design logos to create your image for campaings, 
+	catalogs... All you need for create your designs.</p>
+	</div>
+</div>
+
+<div id="strategy" class="servicios">
+
+	<div class="txt-container">
+		<p>Imagine the best possible solution for your needs... And you will be surprised!
+Working with your specifications, we will analyze your needs and bring together a team of experts for each aspect. This team will hold brainstorming sessions in order to thing up a concept that will meet your 
+objetives and seduce users.</p>
+	</div>
+</div>
+
+<div id="art" class="servicios">
+	
+	<div class="txt-container">
+		<p>Photography &amp; Videography are 
+essential in the Digital World.
+We have a studio space in Miami. 
+Editorial and lifestyle photography, 
+ecommerce is an art
+department that represents 
+international photographers,  artists,art directors, make up artists, stylists, and models.</p>
+	</div>
+</div>
+
+<div id="contacto" class="servicios">
+	<div class="cont-form">
+		<h3>Fill this and contact us</h3>
+		<form method="" action="">
+			<fieldset>
+				<div class="rows select-input clearfix">
+					<label for="needFor">You need us for:</label>
+					<select id="needFor" name="needFor">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</div>
+				<div class="rows name-input clearfix">
+					<label for="name">Your name :</label>
+					<input type="text" id="name" name="name" />
+				</div>
+				<div class="rows work-input clearfix">
+					<label for="work">Your work :</label>
+					<input type="text" id="work" name="work" />
+				</div>
+				<div class="rows email-input clearfix">
+					<label for="email">Your email :</label>
+					<input type="text" id="email" name="email" />
+				</div>
+				<div class="rows phone-input clearfix">
+					<label for="phone">Your phone :</label>
+					<input type="text" id="phone" name="phone" />
+				</div>
+				<div class="rows more-input clearfix">
+					<label for="more">Tell us more :</label>
+					<input type="text" id="" name="more" />
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<p>4FOUR MIAMI / 2ND AVE. MIAMI FL 33137 305.514.0030 - EXT. 402 / AMI FL 33137 305.514.0030 - EXT. 402 / INFO@4FOUR.COM</p>
+</div>
+
+<div id="content" class="servicios">
+	<div class="txt-container">
+		<p id="textoIntro">4Four is a group of independent specialist consultancies, directors, artists, Each one has a distinct area of expertise that can be brought into play on proyects requiring a combination of skills. The obvious advantage to our clients is that we can assemble a team with precisely the right group of skills needed to handle a particular proyect.</p>
+		
+		<div id="news">
+			<h3>News</h3>
+			<div id="scroll">
+			<p>+ 4Four is a group of independent specialist consultancies, directors, artists. Each one has a distinct area of expertise that can be brough.</p>
+			<p>+ 4Four is a group of independent specialist consultancies, directors, artists. Each one has a distinct area of expertise that can be brough.</p>
+			</div>
+		</div>
+		
+		<div id="colDer">
+			<div id="redesSociales">
+				<h3>WE BLOG/<br />YOU FOLLOW</h3>
+				<div id="linksRedes" class="clearfix">
+					<a href="#" class="tweeter" title="Tweeter"><span class="DN">Tweeter</span></a>
+					<a href="#" class="facebook" title="Facebook"><span class="DN">Facebook</span></a>
+					<a href="#" class="blogger" title="Blogger"><span class="DN">Blogger</span></a>
+					<a href="#" class="nose noMarginRight" title="Nose"><span class="DN">Nose</span></a>
+				</div>
+			</div>
+			<a href="#" id="downloadPortfolio" title="Download Portfolio"><span class="DN">Download Portfolio</span></a>
+		</div>
+	</div>
+		
+<p class="ft">4FOUR MIAMI<br /> 2ND AVE. MIAMI FL 33137 305.514.0030 - EXT. 402<br />AMI FL 33137 305.514.0030 - EXT. 402<br />INFO@4FOUR.COM</p>
+
+</div>
+
+</body>
+</html>
