@@ -1,0 +1,1114 @@
+/*
+ * Reset
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/*
+ * Fonts
+*/
+
+@font-face {
+	font-family:"avenir-black";
+	src: url("../fonts/avenirltstd-black-webfont.eot");
+	src: local("?"),
+	url("../fonts/avenirltstd-black-webfont.woof") format("woff"),
+	url("../fonts/avenirltstd-black-webfont.ttf") format("truetype"),
+	url("../fonts/avenirltstd-black-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+	font-family:"avenir-light";
+	src: url("../fonts/avenirltstd-light-webfont.eot");
+	src: local("?"),
+	url("../fonts/avenirltstd-light-webfont.woof") format("woff"),
+	url("../fonts/avenirltstd-light-webfont.ttf") format("truetype"),
+	url("../fonts/avenirltstd-light-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+/*
+ * End Fonts
+*/
+
+/*
+ * Global styles
+*/
+
+body {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	height: 7580px;
+	color: #fff;
+}
+
+html, body{
+	overflow-x: hidden;
+}
+
+.DN{display:none;}
+
+section .wrapper, footer .wrapper, nav .wrapper{
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.contentBg{
+	background: url('../img/background.png') no-repeat center top transparent;
+	position: absolute;
+	top: 0;
+	height: 6474px;
+	width: 100%;
+	top: 1041px;
+	z-index: 2;
+}
+
+
+/*
+ * Logo
+*/
+
+
+.logo{
+	width: 600px;
+	height: 400px;
+	background: url("../img/bg_logo.png") no-repeat;
+	z-index: 1500;
+	position: fixed;
+	right: -200px;
+	top: -140px;
+}
+
+.logo h1{
+	background: url("../img/logo.jpg") no-repeat;
+	text-indent: -9999px;
+	margin: 150px 0 0 270px;
+}
+
+.logo h1,
+.logo h1 a{
+	display: block;
+	height: 120px;
+	width: 110px;
+}
+
+/*
+ * Navigation
+*/
+
+nav{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url("../img/nav.png") no-repeat;
+	height: 112px;
+	z-index: 100;
+}
+
+	nav.notFixed{
+		position: absolute;
+		top: 7203px;
+	}
+
+nav ul{
+	position: absolute;
+	bottom: 0;
+}
+
+nav li, nav li a{
+	display: inline-block;
+}
+
+.ie7 nav li, .ie7 nav li a{
+	display: inline;
+}
+
+nav li{
+	margin-right: 32px;
+	text-transform: uppercase;
+	font-family:"avenir-light";
+	font-size: 11px;
+	font-weight: bold;
+}
+
+nav li a{
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 8px solid transparent;
+	padding-bottom: 28px;
+}
+
+	nav li a.home:hover, nav li a.home.active{
+		color: #cd1266;
+		border-color: #d50e69;
+	}
+
+	nav li a.agencia:hover, nav li a.agencia.active{
+		color: #cf1e99;
+		border-color: #a03895;
+	}
+
+	nav li a.servicios:hover, nav li a.servicios.active{
+		color: #bfe33c;
+		border-color: #94bb2c;
+	}
+
+	nav li a.trabajos:hover, nav li a.trabajos.active{
+		color: #efca14;
+		border-color: #d0a40e;
+	}
+
+	nav li a.clientes:hover, nav li a.clientes.active{
+		color: #5197df;
+		border-color: #549de7;
+	}
+
+	nav li a.contacto:hover, nav li a.contacto.active{
+		color: #000;
+		border-color: #000;
+	}
+
+/*
+ * End Navigation
+*/
+
+
+/*
+ * Sections
+*/
+
+section{
+	height: 600px;
+	width: 100%;
+	position: absolute;
+	z-index: 3;
+}
+
+	#home{
+		background: url("../img/bg_home.png") center -200px no-repeat;
+		height: 1721px;
+		z-index: 2;
+	}
+
+	#agencia{
+		top: 1360px;
+	}
+
+	#servicios{
+		top: 2410px;
+	}
+
+	#trabajos{
+		top: 3580px;
+	}
+
+	#clientes{
+		top: 5160px;
+	}
+
+	#contacto{
+		top: 6645px;
+	}
+
+section header h1{
+	font-family:"avenir-black";
+	letter-spacing: -2px;
+	text-transform: uppercase;
+}
+
+section header h1 span{
+	font-family:"avenir-light";
+	text-transform: lowercase;
+	opacity: .6;
+	display: block;
+}
+
+section article p.intro{
+	font-size: 11px;
+}
+
+/*
+ * End Sections
+*/
+
+/*
+ * Home
+*/
+
+section#home #slider-portada{
+	margin-top: 20px;
+}
+
+section#home #slider-portada ul li{
+	position: relative;
+	height: 550px;
+}
+
+section#home #slider-portada li > div{
+	width: 367px;
+}
+
+section#home #slider-portada h2{
+	font-family:"avenir-light";
+	text-transform: lowercase;
+	font-size: 60px;
+	letter-spacing: -2px;
+	position: absolute;
+	bottom:320px;
+	line-height: 50px;
+	width: 300px;
+}
+
+.ie7 section#home #slider-portada h2{
+	line-height: 55px;
+}
+
+section#home #slider-portada li img{
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+}
+
+section#home #slider-portada h2 span{
+	font-size: 35px;
+	opacity: .6;
+	display: block;
+	line-height: 0 !important;
+}
+
+section#home #slider-portada p{
+	width: 325px;
+	position: absolute;
+	top: 250px;
+	z-index: 100;
+}
+
+section#home #slider-portada p a{
+	font-family: "avenir-light";
+	font-size: 15px;
+	background: url("../img/arrow-right.png") no-repeat top right;
+	float: right;
+	padding-right: 57px;
+	height: 110px;
+	line-height: 110px;
+	display: block;
+	width: 106px;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 15px;
+}
+
+section#home #slider-portada p a:hover{
+	color: #333;
+	background: url("../img/arrow-right.png") no-repeat bottom right;
+}
+
+
+section#home ol.bjqs-markers{
+	position: absolute;
+	right: 35px;
+	top: 445px;
+}
+
+section#home .bjqs-markers li{
+	width: 46px;
+	height: 50px;
+	text-indent: -9999px;
+	background: url("../img/clientes/sprite_slider.png") 0px 0px no-repeat;
+	margin-left: -17px;
+}
+
+section#home .bjqs-markers li.active-marker{
+	background-position: 0px -50px;
+}
+
+section#home #contentTweeter{
+	background: url("../img/tweeter_home.png") no-repeat;
+	height: 87px;
+	width: 794px;
+	position: absolute;
+	top: 495px;
+	right: 30px;
+}
+
+.tweets{
+	width: 670px;
+	padding: 0 10px;
+	margin-top: 12px;
+	overflow: hidden;
+}
+
+.tweets li{
+	line-height: 36px;
+}
+
+.tweets li span.title{
+	color: #5b5b5b;
+	display: inline-block;
+	width: 520px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 11px;
+}
+
+.tweets li span.title a{
+	color: #5b5b5b;
+	text-decoration: none;
+}
+
+.tweets li span.date{
+	position: absolute;
+	right: 15px;
+	font-size: 10px;
+	color: #b3b3b3;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.tweets li a{
+	color: #d50e69;
+}
+
+/*
+.tweets .tweet_list{
+	width: 620px;
+	padding: 0 40px 0 15px;
+	position: relative;
+}
+
+.tweets .tweet_list li{
+	line-height: 36px;
+	margin-top: 12px;
+}
+
+.tweets .tweet_text{
+	color: #5b5b5b;
+	display: inline-block;
+	width: 550px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 11px;
+}
+
+.ie7 .tweets .tweet_text{
+	display: inline;
+}
+
+.tweets .tweet_text a{
+	color: #d50e69;
+}
+
+.tweets .tweet_time{
+	position: absolute;
+	right: 15px;
+	font-size: 10px;
+}
+
+.tweets .tweet_time a{
+	color: #b3b3b3;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+*/
+/*
+ * Agencia
+*/
+
+section#agencia .wrapper{
+	background: url("../img/agencia/bg_agencia.png") left 188px no-repeat
+}
+
+section#agencia header{
+	position: absolute;
+	top: 50px;
+}
+
+section#agencia header h1{
+	font-size: 55px;
+	line-height: 42px;
+	margin-bottom: 20px;
+}
+
+.ie7 section#agencia header h1{
+	line-height: 48px;
+}
+
+section#agencia header h1 span{
+	font-size: 44px;
+	margin-left: 66px;
+}
+
+section#agencia .img-agencia{
+	position: absolute;
+	top: 185px;
+	left: -20px;
+}
+
+section#agencia .lifestyle {
+	font-family: "avenir-light";
+	font-size: 54px;
+	background: url("../img/arrow-left.png") left top no-repeat;
+	padding-left: 57px;
+	height: 110px;
+	line-height: 110px;
+	position: absolute;
+	left: 595px;
+	top: 338px;
+	letter-spacing: -2px;
+}
+
+section#agencia article{
+	position: absolute;
+	top: 145px;
+}
+
+section#agencia article p.intro{
+	width: 500px;
+}
+
+/*
+ * End Agencia
+*/
+
+/*
+ * Servicios
+*/
+
+section#servicios header{
+	position: absolute;
+	right: 80px;
+	top: 65px;
+}
+
+section#servicios header h1{
+	font-size: 85px;
+	line-height: 54px;
+	margin-bottom: 20px;
+}
+
+.ie7 section#servicios header h1{
+	line-height: 70px;
+}
+
+section#servicios header h1 span{
+	font-family:"avenir-light";
+	text-transform: lowercase;
+	font-size: 44px;
+	opacity: .6;
+	display: block;
+	margin-left: 95px;
+}
+
+section#servicios article{
+	position: absolute;
+	right: 80px;
+	top: 190px;
+}
+
+section#servicios article p.intro{
+	width: 380px;
+}
+
+section#servicios .listaServicios{
+	width: 510px;
+	margin-top: 20px;
+}
+
+section#servicios .listaServicios li{
+	width: 145px;
+	margin-right: 8px;
+	line-height: 20px;
+	display: inline-block;
+	background: url("../img/servicios/vineta-servicios.png") no-repeat 0px 5px;
+	padding-left: 10px;
+	color: #4c6607;
+}
+
+.ie7 section#servicios .listaServicios li{
+	display: inline;
+}
+
+section#servicios .img-servicios{
+	position:absolute;
+	left: -130px;
+}
+
+/*
+ * End Servicios
+*/
+
+
+/*
+ * Trabajos
+*/
+
+section#trabajos{
+	background: url("../img/trabajos/bg_trabajos.png") center top;
+}
+
+section#trabajos header{
+	position: absolute;
+	left: 0px;
+	top: 45px;
+}
+
+section#trabajos header h1{
+	font-size: 71px;
+	line-height: 44px;
+	margin-bottom: 20px;
+}
+
+.ie7 section#trabajos header h1{
+	line-height: 60px;
+}
+
+section#trabajos header h1 span{
+	font-family:"avenir-light";
+	text-transform: lowercase;
+	font-size: 39px;
+	opacity: .6;
+	display: block;
+	margin-left: 165px;
+}
+
+section#trabajos .content{
+	position: absolute;
+	top: 150px;
+}
+
+section#trabajos .carousel{
+	position: absolute;
+	left: 0;
+}
+
+section#trabajos .content li{
+	display: inline-block;
+	position: relative;
+}
+
+.ie7 section#trabajos .content li{
+	display: inline;
+}
+
+section#trabajos .arrows{
+	top: 460px;
+	position: absolute;
+	right: 50px;
+	z-index: 10;
+}
+
+section#trabajos .arrows li{
+	width: 56px;
+	height: 110px;
+	text-indent: -9999px;
+	cursor: pointer;
+	background: url("../img/arrow-left.png") top no-repeat;
+	display: inline-block;
+}
+
+.ie7 section#trabajos .arrows li{
+	float: left;
+}
+
+section#trabajos .arrows li.next{
+	width: 56px;
+	height: 110px;
+	text-indent: -9999px;
+	background: url("../img/arrow-right.png") top no-repeat;
+	position: relative;
+	top: 40px;
+	left: 25px;
+}
+
+section#trabajos .arrows li.disable{
+	background-position: bottom left;
+	cursor: default;
+}
+
+/*
+ * End Trabajos
+*/
+
+
+
+/*
+ * Clientes
+*/
+
+section#clientes{
+	background: url("../img/clientes/bg_clientes.png") no-repeat 12% 133px;
+}
+
+section#clientes header{
+	position: absolute;
+	left: 0px;
+	top: 35px;
+}
+
+section#clientes header h1{
+	font-size: 85px;
+	line-height: 48px;
+	margin-bottom: 20px;
+}
+
+.ie7 section#clientes header h1{
+	line-height: 65px;
+	margin-bottom: 40px;
+}
+
+section#clientes header h1 span{
+	font-family:"avenir-light";
+	text-transform: lowercase;
+	font-size: 31px;
+	opacity: .6;
+	display: block;
+	margin-left: 65px;
+}
+
+section#clientes .content{
+	top: 135px;
+	position: relative;
+}
+
+.ie7 section#clientes .content{
+	top: 150px;
+}
+
+section#clientes .sliders{
+	background: url("../img/clientes/sombra_slider.png") center bottom no-repeat;
+	position: absolute;
+}
+
+section#clientes .sliders h2{
+	font-family: "avenir-light";
+	font-size: 54px;
+	background: url("../img/arrow-left.png") left top no-repeat;
+	padding-left: 57px;
+	height: 110px;
+	line-height: 110px;
+	position: absolute;
+	left: 640px;
+	top: 220px;
+	letter-spacing: -2px;
+}
+
+section#clientes .bjqs-markers{
+	margin-top: -36px;
+	position: relative;
+}
+
+section#clientes .bjqs-markers li,
+section#clientes .tabsClientes li{
+	width: 46px;
+	height: 50px;
+	text-indent: -9999px;
+	background: url("../img/clientes/sprite_slider.png") 0px 0px no-repeat;
+	margin-left: -17px;
+}
+
+section#clientes .bjqs-markers li.active-marker,
+section#clientes .tabsClientes li.active{
+	background-position: 0px -50px;
+}
+
+
+section#clientes .tabsClientes{
+	position: absolute;
+	right: 0;
+	top: 390px;
+}
+
+section#clientes .tabsClientes p,
+section#clientes .tabsClientes ul,
+section#clientes .tabsClientes li{
+	float: left;
+
+}
+
+section#clientes .tabsClientes p{
+	line-height: 48px;
+	margin-right: 15px;
+	color: #75b4f1;
+}
+
+/*
+ * End clientes
+*/
+
+
+/*
+ * Contacto
+*/
+
+section#contacto header{
+	position: absolute;
+	left: 20px;
+	top: 40px;
+}
+
+section#contacto header h1{
+	font-size: 77px;
+	line-height: 48px;
+	margin-bottom: 20px;
+}
+
+.ie7 section#contacto header h1{
+	line-height: 60px;
+}
+
+section#contacto header h1 span{
+	font-family:"avenir-light";
+	text-transform: lowercase;
+	font-size: 41px;
+	opacity: .6;
+	display: block;
+	margin-left: -20px;
+}
+
+section#contacto .content img.contacto{
+	position: absolute;
+	right: -240px;
+	top: -84px;
+}
+
+#contacto form{
+	position: relative;
+	width: 400px;
+	top: 180px;
+	left: 10px;
+}
+
+#contacto .rows{
+	overflow:hidden;
+	margin-bottom: 5px;
+}
+
+#contacto .rows span{
+	color:#157dbb;
+	font-size:11px;
+	margin-top:5px;
+	float:left;
+	display:block;
+}
+
+#contacto input[type=text],
+#contacto textarea{
+	display:block;
+	border:none;
+	float:left;
+	width:360px;
+	font-size:11px;
+	color:#fff;
+	margin-right:4px;
+	outline:none;
+	background:url(../img/contacto/sprite_contacto.png);
+}
+
+#contacto input[type=text]{
+	background-position:0 0px;
+	height:39px;
+	line-height:39px;
+	padding:0 10px;
+}
+
+#contacto textarea{
+	background-position:0 -43px;
+	height:74px;
+	padding:10px;
+	margin-top:0;
+	resize:none;
+	overflow:hidden;
+}
+
+#contacto input[type=text].error,
+#contacto textarea.error{
+	border: 1px solid #a90f34;
+}
+
+#contacto input[type=submit]{
+	font-family: "avenir-light";
+	font-size: 54px;
+	background: url("../img/arrow-right.png") no-repeat top right;
+	padding-right: 57px;
+	height: 110px;
+	line-height: 97px;
+	letter-spacing: -2px;
+	display:block;
+	color:#fff;
+	text-transform: lowercase;
+	border:none;
+	cursor:pointer;
+	position: absolute;
+	right: -60px;
+	top: 220px;
+}
+
+#contacto .submit p{
+	margin-left: 20px;
+	color: #666;
+	line-height: 20px;
+}
+
+#contacto .submit span{
+	margin: 0px 3px 0 0;
+}
+
+#contacto .rows span#form-response{
+	margin-left: 21px;
+	font-size: 14px;
+	color: #05972E;
+}
+
+#contacto .rows span#form-response.error{
+	color: #a90f34;
+}
+
+/*
+ * End Contacto
+*/
+
+
+/*
+ * Footer
+*/
+
+#footer{
+	width: 100%;
+	position: absolute;
+	top: 7315px;
+	height: 222px;
+	background: #2d2c2d url("../img/bg_footer.png") repeat-x;
+	z-index: 3;
+	padding-top: 43px;
+}
+
+#footer dl{
+	display: inline-block;
+	width: 220px;
+	margin-right: 20px;
+}
+
+.ie7 #footer dl{
+	display: inline;
+}
+
+#footer dl.last{
+	margin-right: 0;
+}
+
+#footer dt{
+	font-family: "avenir-light";
+	color: #9a9a9a;
+	font-size: 21px;
+	margin-bottom: 18px;
+}
+
+#footer dt span{
+	display: block;
+	color: #fff;
+	font-size: 24px;
+	font-family: "avenir-black";
+	text-transform: uppercase;
+	margin-top: 2px;
+}
+
+#footer dd.mail{
+	color: #388be8;
+}
+
+#footer .social{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#footer .social li{
+	display: inline-block;
+	width: 141px;
+	height: 94px;
+	position: relative;
+	vertical-align: bottom;
+}
+
+.ie7 #footer .social li{
+	display: inline;
+}
+
+#footer .social li.facebook{
+	background-image:url("../img/footer_fb.png");
+}
+
+#footer .social li.tweeter{
+	background-image:url("../img/footer_tweeter.png");
+	position: relative;
+	left: -51px;
+}
+
+#footer .social li a{
+	position: absolute;
+	top: 23px;
+	right: 30px;
+	width: 38px;
+	height: 48px;
+	text-indent: -9999px;
+}
+
+#footer p.copyright{
+	color: #9a9a9a;
+	position: absolute;
+	bottom: 15px;
+	font-weight: bold;
+	font-size: 11px;
+	left: 0;
+}
+
+/*
+ * End Footer
+*/
+
+
+
+/*
+ * Modal Globals
+*/
+
+.modal{
+	display: none;
+}
+
+.modal .close{
+	width: 53px;
+	height: 53px;
+	position: absolute;
+	background: url("../img/cerrar-modal.png") no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.modal .contentModal,
+.modal .sliderModal{
+	position: relative;
+}
+
+.modal ol.bjqs-markers{
+	position: absolute;
+}
+
+.modal .bjqs-markers li{
+	width: 46px;
+	height: 50px;
+	text-indent: -9999px;
+	background: url("../img/clientes/sprite_slider.png") 0px 0px no-repeat;
+	margin-left: -17px;
+}
+
+.modal .bjqs-markers li.active-marker{
+	background-position: 0px -50px;
+}
+
+.modal .sliderModal > li{
+	position: absolute;
+}
+
+.modal .sliderModal img{
+	vertical-align: top;
+}
+
+.modal .contentDescription{
+	background: #000;
+	color: #686868;
+	font-size: 11px;
+	line-height: 18px;
+}
+
+.modal .contentDescription h1{
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+/*
+ * Modal Horizontal
+*/
+
+.modal.horizontal .contentDescription{
+	margin: 0 15px;
+	padding: 24px 27px;
+	padding-right: 320px;
+	position: relative;
+	min-height: 56px;
+}
+
+.modal.horizontal .close{
+	right: 25px;
+	top: 28px;
+}
+
+.modal.horizontal ol.bjqs-markers{
+	right: 118px;
+	bottom: -75px;
+}
+
+/*
+ * Modal Vertical
+*/
+
+.modal.vertical{
+	position: relative;
+}
+
+.modal.vertical .contentDescription{
+	background: #000;
+	width: 200px;
+	padding: 190px 15px 15px 15px;
+	position: absolute;
+	top: 20px;
+	bottom: 20px;
+	right: 0;
+	color: #686868;
+	font-size: 11px;
+	line-height: 18px;
+}
+
+.modal.vertical .sliderModal img{
+	vertical-align: top;
+}
+
+.modal.vertical .close{
+	top: 30px;
+	right: 20px;
+}
+
+.modal.vertical ol.bjqs-markers{
+	bottom: 30px;
+	right: -220px;
+}
+
+/*
+ * Fondo modal
+*/
+
+.overlayModal{
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: #000;
+	z-index: 1900;
+	position: fixed;
+	display: none;
+	opacity: 0.8;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	cursor: pointer;
+}
