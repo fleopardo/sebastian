@@ -11,242 +11,78 @@
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/superslides.css" />
 	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
-	<script src="js/jquery.min.js"></script>
-</head>
-<body>
 
-	<div class="logo">
-		<h1><a href="#home">Dedo interactive</a></h1>
+</head>
+<body class="home">
+
+	<header> <!-- header -->
+		<hgroup>
+			<h1>Abril</h1>
+			<h2>Vestidos de novias</h2>
+		</hgroup>
+	</header> <!-- /header -->
+
+	<nav class="menuPrincipal"> <!-- Menu de navegacion -->
+		<div>
+			<ul>
+				<li><a href="index.php" class="active" title="Home">La marca</a></li>
+				<li><a href="promociones.php" title="Promociones">Promociones</a></li>
+				<li><a href="sociales.php" title="Sociales">Sociales</a></li>
+				<li><a href="oportunidades-de-negocio.php" title="Oportunidades de negocio">Oportunidades de negocio</a></li>
+			</ul>
+		</div>
+	</nav> <!-- /Menu de navegacion -->
+
+	<section class="main"> <!-- home -->
+		<ul>
+			<li class="novias">
+				<h3>Novias</h3>
+				<div class="slideshow">
+					<img src="./galerias/home/novias/03.jpg" width="255" height="268" />
+					<img src="./galerias/home/novias/02.jpg" width="255" height="268" />
+					<img src="./galerias/home/novias/01.jpg" width="255" height="268" />
+				</div>
+			</li>
+
+			<li class="madrinas">
+				<h3>Madrinas & Fiestas</h3>
+				<img src="./galerias/home/madrinas/01.jpg" width="255" height="268" />
+			</li>
+		</ul>
+	</section> <!-- /home -->
+
+	<div id="background-slide">
+		<div class="slides-container">
+			<img src="./galerias/home/foto01.jpg" />
+			<img src="./galerias/home/foto01.jpg" />
+			<img src="./galerias/home/foto01.jpg" />
+		</div>
+		<!--nav class="slides-navigation">
+	   		<a href="#" class="next">Next</a>
+	    	<a href="#" class="prev">Previous</a>
+	  </nav-->
 	</div>
 
-	<nav>
-		<div class="wrapper">
-			<ul>
-				<li><a href="#home" data-section="home" class="home active" title="Home">Home</a></li>
-				<li><a href="#agencia" data-section="agencia" class="agencia" title="Agencia">Agencia</a></li>
-				<li><a href="#servicios" data-section="servicios" class="servicios" title="Servicios">Servicios</a></li>
-				<li><a href="#trabajos" data-section="trabajos" class="trabajos" title="Trabajos">Trabajos</a></li>
-				<li><a href="#clientes" data-section="clientes" class="clientes" title="Clientes">Clientes</a></li>
-				<li><a href="#contacto" data-section="contacto" class="contacto" title="Contacto">Contacto</a></li>
-			</ul>
-		</div>
-	</nav>
+	<script>
 
-	<!-- home -->
-	<section id="home">
-		<div class="wrapper">
+	/* scr.js - Little tiny loader for javascript sources. */
+	(function(a){window.scr={js:function(o,h){if(typeof o==="string"){o=[o]}var j,k,m,l,f,g,d;j=a.getElementsByTagName("script")[0];k={t:o.length,i:0};k.r=function(){return k.t===k.i};m=function(){k.i+=1;if(h&&k.r()){h()}};l=(function(){if(j.readyState){return function(b){b.onreadystatechange=function(){if(b.readyState==="loaded"||b.readyState==="complete"){b.onreadystatechange=null;m()}}}}else{return function(b){b.onload=function(){m()}}}}());f=0;g=a.createElement("script");for(f;f<k.t;f+=1){d=g.cloneNode(true);l(d);d.src=o[f];j.parentNode.insertBefore(d,j)}}}}(document));
 
-			<div id="slider-portada"></div>
+	window.onload = function(){
 
-			<div id="contentTweeter">
-				<div class="tweets"></div>
-			</div>
+		scr.js("js/jquery.min.js",function(){
 
-		</div>
-	</section>
+				scr.js(["js/jquery.easing-1.3.pack.js","js/simpleSlideFade.js","js/jquery.superslides.min.js"],function(){
 
-	<!-- agencia -->
-	<section id="agencia">
-		<div class="wrapper">
+						scr.js("js/home.js");
 
-			<header>
-				<h1>Agencia <span>de Marketing Digital</span></h1>
-			</header>
+				});
+		});
 
-			<img class="img-agencia" width="727" height="367" src="./img/agencia/img_agencia.png" />
-			<span class="lifestyle">lifestyle</span>
+	};
 
-			<article>
-				<p class="intro">Somos una Agencia de Marketing Digital orientada a la creación y desarrollo de campañas integrales. Nos caracterizamos por nuestro enfoque estético, creativo y estratégico poco convencional aplicado a las tecnologías emergentes, logrando así, alcanzar resultados positivos.<br />
-			Contamos con nuestro departamento de Cuentas, Marketing, Creatividad, Arte, Sistemas y Medios, permitiéndonos crear los distintos procesos de comunicación bajo un mismo concepto y lineamiento.</p>
-			</article>
-
-		</div>
-	</section>
-
-	<!-- servicios -->
-	<section id="servicios">
-		<div class="wrapper">
-			<img class="img-servicios" src="./img/servicios/servicios.png" />
-
-			<header>
-				<h1>Servicios <span>consultoria e interactive</span></h1>
-			</header>
-
-			<article>
-				<p class="intro">Nos basamos en un carácter de identidad personalizada y representativa para cada proyecto. Fusionamos arte, creatividad y tecnología en base a un planeamiento estratégico. Creamos experiencias a través de un servicio con fuerzas integradas.</p>
-
-				<ul class="listaServicios">
-					<li>Web Site</li>
-					<li>CRM</li>
-					<li>Loyalty</li>
-					<li>Microsite</li>
-					<li>E-Learning</li>
-					<li>Rich Media</li>
-					<li>Usabilidad</li>
-					<li>Groupware</li>
-					<li>E-mail Marketing</li>
-					<li>Redes Sociales Empresariales</li>
-					<li>Web Reporting</li>
-					<li>Consultoria Web</li>
-					<li>Games</li>
-					<li>Web Portal</li>
-					<li>SEO - SEM</li>
-					<li>Web 2.0</li>
-					<li>Business Microblogging</li>
-					<li>Facebook Ads</li>
-					<li>E-commerce</li>
-					<li>Strategy</li>
-				</ul>
-			</article>
-
-		</div>
-	</section>
-
-	<!-- trabajos -->
-	<section id="trabajos">
-		<div class="wrapper">
-			<header>
-				<h1>Trabajos <span>innovación y resultados</span></h1>
-			</header>
-		</div>
-
-		<div class="content"></div>
-
-	</section>
-
-	<!-- clientes -->
-	<section id="clientes">
-		<div class="wrapper">
-			<header>
-				<h1>Clientes <span>y agencias que confian en nosotros</span></h1>
-			</header>
-
-			<div class="content">
-
-				<div id="slider-agencias" class="sliders DN">
-					<h2>agencias</h2>
-					<ul class="bjqs">
-				        <li>
-				        	<img src="img/clientes/agencias1.png" width="734" height="391" />
-				        </li>
-				    </ul>
-				</div>
-
-				<div id="slider-marcas" class="sliders">
-					<h2>marcas</h2>
-					<ul class="bjqs">
-				        <li>
-				        	<img src="img/clientes/marcas1.png" width="734" height="391" />
-				        </li>
-				        <li>
-				        	<img src="img/clientes/marcas2.png" width="734" height="391" />
-				        </li>
-				        <li>
-				        	<img src="img/clientes/marcas3.png" width="734" height="391" />
-				        </li>
-				    </ul>
-				</div>
-
-				<div class="tabsClientes">
-					<p>Vea marcas o agencias »</p>
-					<ul>
-						<li data-id="slider-marcas" class="active">Marcas</li>
-						<li data-id="slider-agencias">Agencias</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- contacto -->
-	<section id="contacto">
-		<div class="wrapper">
-			<header>
-				<h1>Contacto <span>complete los datos</span></h1>
-			</header>
-
-			<div class="content">
-
-				<img src="img/contacto/contacto.png" width="950" height="587" class="contacto" />
-
-				<form id="formularioContacto" method="post" action="contacto.php">
-					<fieldset>
-						<div class="rows">
-							<input type="text" placeholder="Nombre y apellido..." id="name" name="name" />
-							<span>*</span>
-						</div>
-						<div class="rows">
-							<input type="text" placeholder="Pais..." id="pais" name="pais" />
-							<span>*</span>
-						</div>
-						<div class="rows">
-							<input type="text" placeholder="Email..." id="email" name="email" />
-							<span>*</span>
-						</div>
-						<div class="rows">
-							<textarea placeholder="Consulta..." name="message" id="message"></textarea>
-							<span>*</span>
-						</div>
-						<div class="rows submit">
-							<p><span>*</span> Datos Obligatorios</p>
-							<input type="submit" id="botonEnviarConsulta" value="Enviar" />
-							<span id="form-response"></span>
-						</div>
-					</fieldset>
-				</form>
-
-			</div>
-		</div>
-	</section>
-
-	<div class="contentBg"></div>
-
-	<footer id="footer">
-		<div class="wrapper">
-
-			<dl>
-				<dt>dedo <span>Argentina</span></dt>
-
-				<dd>Jean Jaures 1165 Piso 5 | Of. E | C1429BDJ</dd>
-				<dd>Ciudad Autónoma de Bs. As.</dd>
-				<dd>Tel: (+54) 011.4963.9562</dd>
-				<dd class="mail">info-arg@dedointeractive.com</dd>
-			</dl>
-
-			<dl>
-				<dt>dedo <span>Mexico</span></dt>
-
-				<dd>Sonora 85 Int. 201 | 06700</dd>
-				<dd>Colonia Roma Norte Ciudad de México | DF</dd>
-				<dd>Tel: (+52) 55.5271.3637</dd>
-				<dd class="mail">info-mex@dedointeractive.com</dd>
-			</dl>
-
-			<dl class="last">
-				<dt>dedo <span>Ecuador</span></dt>
-
-				<dd>Sonora 85 Int. 201 | 06700</dd>
-				<dd>Colonia Roma Norte Ciudad de México | DF</dd>
-				<dd>Tel: (+52) 55.5271.3637</dd>
-				<dd class="mail">info-ecu@dedointeractive.com</dd>
-			</dl>
-
-			<ul class="social">
-				<li class="facebook"><a href="http://www.facebook.com/Dedointeractive" rel="nofollow" target="_blank">Facebook</a></li>
-				<li class="tweeter"><a href="http://twitter.com/DedoInteractive" rel="nofollow" target="_blank">Tweeter</a></li>
-			</ul>
-
-			<p class="copyright">Copyright © 2012 Dedo Interactive</p>
-
-		</div>
-	</footer>
-
-	<script src="js/jquery-tweet-scroll.js"></script>
-	<script src="js/trabajos.js"></script>
-	<script src="js/dedo.js"></script>
-	<script src="js/carouselPortfolio.js"></script>
-
+	</script>
 </body>
 </html>
