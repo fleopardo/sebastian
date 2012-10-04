@@ -17,23 +17,9 @@
 </head>
 <body class="home">
 
-	<header> <!-- header -->
-		<hgroup>
-			<h1>Abril</h1>
-			<h2>Vestidos de novias</h2>
-		</hgroup>
-	</header> <!-- /header -->
+	<?php include("./includes/header.php"); ?>
 
-	<nav class="menuPrincipal"> <!-- Menu de navegacion -->
-		<div>
-			<ul>
-				<li><a href="index.php" class="active" title="Home">La marca</a></li>
-				<li><a href="promociones.php" title="Promociones">Promociones</a></li>
-				<li><a href="sociales.php" title="Sociales">Sociales</a></li>
-				<li><a href="oportunidades-de-negocio.php" title="Oportunidades de negocio">Oportunidades de negocio</a></li>
-			</ul>
-		</div>
-	</nav> <!-- /Menu de navegacion -->
+	<?php include("./includes/nav.php"); ?>
 
 	<section class="main"> <!-- home -->
 		<ul>
