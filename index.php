@@ -1,46 +1,20 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]> <html> <![endif]-->
-<!--[if IE 7 ]> <html class="ie7"> <![endif]-->
-<!--[if IE 8 ]> <html class="ie8"> <![endif]-->
-<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
-<!--[if !IE ]><!--> <html> <!--<![endif]-->
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 ie6" lang="es"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7" lang="es"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9 ie8" lang="es"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10 ie9" lang="es"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="es"> <!--<![endif]-->
 <head>
-	<title>DEDO Interactive</title>
-	<meta name="description" content="Dedo Interactive S.A es una agencia de marketing interactivo, que fusiona creatividad y experiencia en el medio de la publicidad online. M&eacute;xico, EEUU y Espa&ntilde;a forman parte de nuestra cartera de clientes que conf&iacute;an en nosotros para sus proyectos y desarrollos digitales.">
-	<meta name="keywords" content="agencia, marketing interactivo, dedo interactive, desarrollo, web, campañas, comunicacion, seo, sem, diseño, creatividad">
+	<title>Abril Web</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="css/basic-jquery-slider.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
-
-	<!--script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.color.js"></script>
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/jquery.scrollorama.js"></script>
-	<script src="js/basic-jquery-slider.min.js"></script>
-	<script src="js/basic-jquery-slider-portada.min.js"></script>
-	<script src="js/basic-jquery.tweet.js"></script-->
-	<script src="js/all_plugins.js"></script>
-	<script>
-		$(document).ready(function () {
-
-		    $("body").queryLoader2({
-		        barColor: "#D50E69",
-		        backgroundColor: "#111",
-		        percentage: false,
-		        barHeight: 2,
-		        completeAnimation: "grow"
-		    }).css("visibility","visible");
-		});
-	</script>
+	<script src="js/jquery.min.js"></script>
 </head>
 <body>
-
-	<script>
-		$("body").css("visibility","hidden");
-	</script>
 
 	<div class="logo">
 		<h1><a href="#home">Dedo interactive</a></h1>
