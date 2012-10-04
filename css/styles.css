@@ -164,19 +164,24 @@ nav.menuPrincipal li a:hover{
 	background-color: rgba(255,255,255,.6);
 }
 
+.home .barra-horizontal > ul > li:hover > a{
+	background-position: left bottom;
+}
+
 .home .barra-horizontal > ul > li > a{
 	display: block;
 	padding-left: 30px;
 	height: 268px;
 	overflow: hidden;
+	margin-left: 3px;
 }
 
 	.home .barra-horizontal li.novias > a{
-		background: url("../img/bg-link-novias.png") no-repeat left bottom;
+		background: url("../img/bg-link-novias.png") no-repeat left top;
 	}
 
 	.home .barra-horizontal li.madrinas > a{
-		background: url("../img/bg-link-madrinas.png") no-repeat left bottom;
+		background: url("../img/bg-link-madrinas.png") no-repeat left top;
 	}
 
 
