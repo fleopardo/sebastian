@@ -15,32 +15,14 @@
 	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
 
 </head>
-<body class="home">
+<body class="promociones">
 
 	<?php include("./includes/header.php"); ?>
 
 	<?php include("./includes/nav.php"); ?>
 
-	<section class="barra-horizontal">
-		<ul>
-			<li class="novias">
-				<a href="#">
-					<h3>Novias</h3>
-					<div class="slideshow">
-						<img src="./galerias/home/novias/03.jpg" width="255" height="268" />
-						<img src="./galerias/home/novias/02.jpg" width="255" height="268" />
-						<img src="./galerias/home/novias/01.jpg" width="255" height="268" />
-					</div>
-				</a>
-			</li>
+	<section class="main">
 
-			<li class="madrinas">
-				<a href="#">
-					<h3>Madrinas & Fiestas</h3>
-					<img src="./galerias/home/madrinas/01.jpg" width="255" height="268" />
-				</a>
-			</li>
-		</ul>
 	</section>
 
 	<div id="background-slide">
@@ -52,7 +34,7 @@
 		<!--nav class="slides-navigation">
 	   		<a href="#" class="next">Next</a>
 	    	<a href="#" class="prev">Previous</a>
-	  	</nav-->
+	  </nav-->
 	</div>
 
 	<script>
