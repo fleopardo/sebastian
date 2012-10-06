@@ -4,7 +4,7 @@
   height: 100%;
   position: fixed;
   z-index:0;
-  background: url('../img/loading.gif') 50% 20% no-repeat;
+  background: url('../img/loading.gif') 50% 50% no-repeat;
 }
 #background-slide .slides-container {
   display: none;
@@ -54,51 +54,24 @@
 #background-slide .slides-navigation a {
   position: fixed;
   display: block;
-  color: black;
-  background: white;
+  color: #fff;
   text-decoration: none;
   display: block;
-  padding: 20px 10px;
-  width: 70px;
+  padding: 60px 0;
+  width: 50px;
   text-align: center;
-  top: 46%;
-  -webkit-transition: padding 0.2s ease-out;
-  -moz-transition: padding 0.2s ease-out;
-  -ms-transition: padding 0.2s ease-out;
-  -o-transition: padding 0.2s ease-out;
-  transition: padding 0.2s ease-out;
+  top: 35%;
+  text-indent:-9999px;
+  background: url("../img/bg-flechas-slider.png") no-repeat;
 }
 #background-slide .slides-navigation a.prev {
   left: 0;
-  -moz-border-radius-topright: 40px;
-  -webkit-border-top-right-radius: 40px;
-  -ms-border-top-right-radius: 40px;
-  -o-border-top-right-radius: 40px;
-  border-top-right-radius: 40px;
-  -moz-border-radius-bottomright: 40px;
-  -webkit-border-bottom-right-radius: 40px;
-  -ms-border-bottom-right-radius: 40px;
-  -o-border-bottom-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  background-position: top left;
 }
-#background-slide .slides-navigation a.prev:hover {
-  padding-left: 20px;
-}
+
 #background-slide .slides-navigation a.next {
   right: 0;
-  -moz-border-radius-topleft: 40px;
-  -webkit-border-top-left-radius: 40px;
-  -ms-border-top-left-radius: 40px;
-  -o-border-top-left-radius: 40px;
-  border-top-left-radius: 40px;
-  -moz-border-radius-bottomleft: 40px;
-  -webkit-border-bottom-left-radius: 40px;
-  -ms-border-bottom-left-radius: 40px;
-  -o-border-bottom-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-}
-#background-slide .slides-navigation a.next:hover {
-  padding-right: 20px;
+  background-position: top right;
 }
 
 #background-slide .slides-pagination {

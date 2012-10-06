@@ -15,36 +15,18 @@
 	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
 
 </head>
-<body class="home">
+<body class="la-marca">
 
 	<?php include("./includes/header.php"); ?>
 
 	<?php include("./includes/nav.php"); ?>
 
 	<section class="barra-horizontal">
-
-		<ul>
-			<li class="novias">
-				<a href="./novias.php">
-					<h3>Novias</h3>
-					<div class="slideshow">
-						<img src="./galerias/home/novias/03.jpg" width="255" height="268" />
-						<img src="./galerias/home/novias/02.jpg" width="255" height="268" />
-						<img src="./galerias/home/novias/01.jpg" width="255" height="268" />
-					</div>
-				</a>
-			</li>
-
-			<li class="madrinas">
-				<a href="./madrinas.php">
-					<h3>Madrinas & Fiestas</h3>
-					<img src="./galerias/home/madrinas/01.jpg" width="255" height="268" />
-				</a>
-			</li>
-		</ul>
+		<p>"Abriles no trabaja apartir del concepto de colecciónes por temporada</br>
+                sino que es una gran colección continua, formada por piezas únicas"</p>
 	</section>
 
-	<a href="./index.php" class="logo-abril-grande" title="Ir a la pagina principal">Abril</a>
+	<a href="./index.php" class="logo-abril-chico" title="Ir a la pagina principal">Abril</a>
 
 	<div id="background-slide">
 		<div class="slides-container">
@@ -52,10 +34,10 @@
 			<img src="./galerias/home/foto01.jpg" />
 			<img src="./galerias/home/foto01.jpg" />
 		</div>
-		<!--nav class="slides-navigation">
+		<nav class="slides-navigation">
 	   		<a href="#" class="next">Next</a>
 	    	<a href="#" class="prev">Previous</a>
-	  	</nav-->
+	  	</nav>
 	</div>
 
 	<script>

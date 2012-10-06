@@ -15,36 +15,45 @@
 	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
 
 </head>
-<body class="home">
+<body class="novias-madrinas madrinas">
 
 	<?php include("./includes/header.php"); ?>
 
 	<?php include("./includes/nav.php"); ?>
 
+	<section class="barra-vertical">
+
+		<h3>Abril novias</h3>
+
+		<p>Encontrá los vestidos de Abriles Madrinas & Fiesta en:</p>
+
+		<h4>Abriles Martinez</h4>
+		<p>
+			Horarios: lunes a viernes de 16 a 20</br>
+			Sabados de 10.30 a 14.30</br>
+			Paunero 1963, Martinez
+		</p>
+
+		<h4>Abriles Recoleta</h4>
+		<p>
+		Horarios: lunes a vierne de 11 a 19.30</br>
+		Sabados de 11 a 13</br>
+		Av Alvear 1883</br>
+		Galeria Promenade, Local 35
+		</p>
+
+		<p class="ver mapa"><a href="#">Ver mapa</a></p>
+
+	</section>
+
 	<section class="barra-horizontal">
-
 		<ul>
-			<li class="novias">
-				<a href="./novias.php">
-					<h3>Novias</h3>
-					<div class="slideshow">
-						<img src="./galerias/home/novias/03.jpg" width="255" height="268" />
-						<img src="./galerias/home/novias/02.jpg" width="255" height="268" />
-						<img src="./galerias/home/novias/01.jpg" width="255" height="268" />
-					</div>
-				</a>
-			</li>
-
-			<li class="madrinas">
-				<a href="./madrinas.php">
-					<h3>Madrinas & Fiestas</h3>
-					<img src="./galerias/home/madrinas/01.jpg" width="255" height="268" />
-				</a>
-			</li>
+			<li><a href="./novias.php">Novias</a></li>
+			<li><a href="./madrinas.php" class="active">Madrinas & Fiesta</a></li>
 		</ul>
 	</section>
 
-	<a href="./index.php" class="logo-abril-grande" title="Ir a la pagina principal">Abril</a>
+	<a href="./index.php" class="logo-abril-chico" title="Ir a la pagina principal">Abril</a>
 
 	<div id="background-slide">
 		<div class="slides-container">
@@ -52,10 +61,10 @@
 			<img src="./galerias/home/foto01.jpg" />
 			<img src="./galerias/home/foto01.jpg" />
 		</div>
-		<!--nav class="slides-navigation">
+		<nav class="slides-navigation">
 	   		<a href="#" class="next">Next</a>
 	    	<a href="#" class="prev">Previous</a>
-	  	</nav-->
+	  	</nav>
 	</div>
 
 	<script>

@@ -36,7 +36,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 */
 
 body {
-	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-family: "Arial Narrow", Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 18px;
 	color: #FFF;
@@ -87,7 +87,7 @@ header{
  * Estilos para el menu de navegación
 */
 
-nav.menuPrincipal{
+.menuPrincipal{
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -96,14 +96,18 @@ nav.menuPrincipal{
 	z-index: 2;
 }
 
-nav.menuPrincipal li{
+.menuPrincipal ul{
+	padding-left: 20px;
+}
+
+.menuPrincipal li{
 	display: inline-block;
-	margin-right: 60px;
+	margin-right: 20px;
 	line-height: 40px;
 	text-transform: uppercase;
 }
 
-nav.menuPrincipal li a{
+.menuPrincipal li a{
 	display: inline-block;
 	padding: 0 40px;
 	color: #fff;
@@ -111,11 +115,26 @@ nav.menuPrincipal li a{
 	text-decoration: none;
 }
 
-nav.menuPrincipal li a:hover{
+.menuPrincipal li a:hover,.menuPrincipal li a.active{
 	background-color: #2f2f31;
 }
 
+.menuPrincipal .facebook{
+	background: url("../img/logo-facebook.png") no-repeat;
+	margin-right: 0;
+	margin-left: 25px;
+	position: relative;
+	top: 7px;
+}
 
+.menuPrincipal .facebook a{
+	display: block;
+	background: url("../img/logo-facebook.png") no-repeat;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	text-indent: -9999px;
+}
 
 /*
  * Estilos para las secciones horizontales y verticales
@@ -123,7 +142,7 @@ nav.menuPrincipal li a:hover{
 
 [class*="barra-"]{
 	position: absolute;
-	padding: 20px;
+	padding: 10px 20px;
 	background-color: rgba(0,0,0,.7);
 	z-index: 1;
 }
@@ -131,22 +150,42 @@ nav.menuPrincipal li a:hover{
 	.barra-horizontal{
 		left: 0;
 		right: 0;
-		bottom: 90px;
+		bottom: 70px;
+		min-height: 70px;
 	}
 
 	.barra-vertical{
-		left: 20px;
+		left: 60px;
 		top: 0;
 		bottom: 0px;
+		width: 360px;
 	}
 
 
+/*
+ * Estilos para logo abril
+*/
 
+[class*="logo-abril-"]{
+	position: absolute;
+	right: 30px;
+	bottom: 83px;
+	text-indent: -9999px;
+	z-index: 10;
+	display: block;
+}
 
+	.logo-abril-grande{
+		background: url("../img/logo-abril-grande.png") no-repeat;
+		width: 298px;
+		height: 95px;
+	}
 
-
-
-
+	.logo-abril-chico{
+		background: url("../img/logo-abril-chico.png") no-repeat;
+		width: 201px;
+		height: 64px;
+	}
 
 /*
  * Home
@@ -155,13 +194,13 @@ nav.menuPrincipal li a:hover{
 .home .barra-horizontal > ul > li {
 	position: relative;
 	display: inline-block;
-	margin-left: 50px;
+	margin-right: 50px;
 	padding: 4px;
 	vertical-align: top;
 }
 
 .home .barra-horizontal > ul > li:hover{
-	background-color: rgba(255,255,255,.6);
+	background-color: rgba(255,255,255,.8);
 }
 
 .home .barra-horizontal > ul > li:hover > a{
@@ -193,3 +232,78 @@ nav.menuPrincipal li a:hover{
 	width: 255px;
 	height: 268px;
 }
+
+
+/*
+ * Estilos para la seccion la marca
+*/
+
+.la-marca .barra-horizontal p{
+	font-size: 30px;
+	line-height: 35px;
+	padding-left: 50px;
+	padding-right: 235px;
+}
+
+/*
+ * Estilos para la seccion novias y madrinas & fiestas
+*/
+
+.novias-madrinas .barra-vertical {
+	font-size: 18px;
+}
+
+.novias-madrinas .barra-vertical h3{
+	text-indent: -9999px;
+	margin-bottom: 22px;
+}
+
+	.novias .barra-vertical h3{
+		width: 265px;
+		height: 112px;
+		background: url("../img/titulo-novias.png") no-repeat;
+	}
+
+	.madrinas .barra-vertical h3{
+		width: 317px;
+		height: 114px;
+		background: url("../img/titulo-madrinas.png") no-repeat;
+	}
+
+.novias-madrinas .barra-vertical h4{
+	line-height: 30px;
+}
+
+.novias-madrinas .barra-vertical p{
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+
+.novias-madrinas .barra-vertical .mapa a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.novias-madrinas .barra-horizontal ul{
+	margin-left: 265px;
+}
+
+.novias-madrinas .barra-horizontal li{
+	display: inline-block;
+	margin: 25px 176px 0 0;
+	vertical-align: bottom;
+	text-transform: uppercase;
+	font-size: 25px;
+	width: 100px;
+}
+
+.novias-madrinas .barra-horizontal li a{
+	color: #2a231e;
+	text-decoration: none;
+}
+
+.novias-madrinas .barra-horizontal li a.active{
+	color: #fff;
+}
+
+
