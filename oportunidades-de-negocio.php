@@ -21,9 +21,26 @@
 
 	<?php include("./includes/nav.php"); ?>
 
-	<section class="main">
+	<section class="barra-horizontal"></section>
+
+	<section class="barra-vertical">
+
+		<h3>Abril</h3>
+
+		<h4>La oportunidad de negocio:</h4>
+
+		Estamos buscando potenciar la llegada
+		de nuestros productos al interior del país atraves de eventos puntuales, esto esta especialmente pensado para mujeres
+		con muchas inquietudes y gran
+		convocatoria.
+
+		Si estas interesada por favor
+		comunicarse atraves de este mail:
+		abrilnovias@gmail.com
 
 	</section>
+
+	<a href="./index.php" class="logo-abril-chico" title="Ir a la pagina principal">Abril</a>
 
 	<div id="background-slide">
 		<div class="slides-container">
@@ -31,10 +48,10 @@
 			<img src="./galerias/home/foto01.jpg" />
 			<img src="./galerias/home/foto01.jpg" />
 		</div>
-		<!--nav class="slides-navigation">
+		<nav class="slides-navigation">
 	   		<a href="#" class="next">Next</a>
 	    	<a href="#" class="prev">Previous</a>
-	  </nav-->
+	  	</nav>
 	</div>
 
 	<script>
@@ -48,7 +65,7 @@
 
 			scr.js(["js/jquery.easing-1.3.pack.js","js/simpleSlideFade.js","js/jquery.superslides.min.js"],function(){
 
-					scr.js("js/home.js");
+					scr.js("js/global.js");
 
 			});
 

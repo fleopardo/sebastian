@@ -48,7 +48,7 @@
 
 			scr.js(["js/jquery.easing-1.3.pack.js","js/simpleSlideFade.js","js/jquery.superslides.min.js"],function(){
 
-					scr.js("js/home.js");
+					scr.js("js/global.js");
 
 			});
 

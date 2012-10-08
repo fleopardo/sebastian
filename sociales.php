@@ -21,9 +21,9 @@
 
 	<?php include("./includes/nav.php"); ?>
 
-	<section class="main">
+	<section class="barra-horizontal"></section>
 
-	</section>
+	<a href="./index.php" class="logo-abril-chico" title="Ir a la pagina principal">Abril</a>
 
 	<div id="background-slide">
 		<div class="slides-container">
@@ -31,10 +31,10 @@
 			<img src="./galerias/home/foto01.jpg" />
 			<img src="./galerias/home/foto01.jpg" />
 		</div>
-		<!--nav class="slides-navigation">
+		<nav class="slides-navigation">
 	   		<a href="#" class="next">Next</a>
 	    	<a href="#" class="prev">Previous</a>
-	  </nav-->
+	  	</nav>
 	</div>
 
 	<script>
@@ -48,7 +48,7 @@
 
 			scr.js(["js/jquery.easing-1.3.pack.js","js/simpleSlideFade.js","js/jquery.superslides.min.js"],function(){
 
-					scr.js("js/home.js");
+					scr.js("js/global.js");
 
 			});
 
