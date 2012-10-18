@@ -11,7 +11,7 @@
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	<link rel="stylesheet" type="text/css" href="css/superslides.css" />
+	<link rel="Stylesheet" type="text/css" href="css/smoothDivScroll.css" />
 	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
 
 </head>
@@ -47,39 +47,39 @@
 		</ul>
 	</section>
 
-	<a href="./index.php" class="logo-abril-chico" title="Ir a la pagina principal">Abril</a>
-
-	<div id="background-slide">
-		<div class="slides-container">
-			<img src="./galerias/home/foto01.jpg" />
-			<img src="./galerias/home/foto01.jpg" />
-			<img src="./galerias/home/foto01.jpg" />
+	<div class="loading">
+		<div id="makeMeScrollable">
+			<img src="./galerias/novias/1.jpg" />
+			<img src="./galerias/novias/2.jpg" />
+			<img src="./galerias/novias/3.jpg" />
+			<img src="./galerias/novias/4.jpg" />
+			<img src="./galerias/novias/5.jpg" />
+			<img src="./galerias/novias/6.jpg" />
+			<img src="./galerias/novias/7.jpg" />
+			<img src="./galerias/novias/8.jpg" />
+			<img src="./galerias/novias/9.jpg" />
+			<img src="./galerias/novias/10.jpg" />
+			<img src="./galerias/novias/11.jpg" />
+			<img src="./galerias/novias/12.jpg" />
+			<img src="./galerias/novias/13.jpg" />
+			<img src="./galerias/novias/14.jpg" />
+			<img src="./galerias/novias/15.jpg" />
+			<img src="./galerias/novias/16.jpg" />
 		</div>
-		<nav class="slides-navigation">
-	   		<a href="#" class="next">Next</a>
-	    	<a href="#" class="prev">Previous</a>
-	  	</nav>
 	</div>
 
-	<script>
+	<!-- jquery va en todas las pantallas -->
+	<script src="js/jquery.min.js"></script>
 
-	/* scr.js - Little tiny loader for javascript sources. */
-	(function(a){window.scr={js:function(o,h){if(typeof o==="string"){o=[o]}var j,k,m,l,f,g,d;j=a.getElementsByTagName("script")[0];k={t:o.length,i:0};k.r=function(){return k.t===k.i};m=function(){k.i+=1;if(h&&k.r()){h()}};l=(function(){if(j.readyState){return function(b){b.onreadystatechange=function(){if(b.readyState==="loaded"||b.readyState==="complete"){b.onreadystatechange=null;m()}}}}else{return function(b){b.onload=function(){m()}}}}());f=0;g=a.createElement("script");for(f;f<k.t;f+=1){d=g.cloneNode(true);l(d);d.src=o[f];j.parentNode.insertBefore(d,j)}}}}(document));
+	<!-- Scripts para galeria autoscrolleable multiples fotos -->
+	<script src="js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+	<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+	<script src="js/jquery.kinetic.js" type="text/javascript"></script>
+	<script src="js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+	<script src="js/init.smoothdivscroll.js" type="text/javascript"></script>
 
-	window.onload = function(){
-
-		scr.js("js/jquery.min.js",function(){
-
-			scr.js(["js/jquery.easing-1.3.pack.js","js/simpleSlideFade.js","js/jquery.superslides.min.js"],function(){
-
-					scr.js("js/global.js");
-
-			});
-
-		});
-
-	};
-
-	</script>
+	<!-- Plugin para simple slider (Home) -->
+	<script src="js/simpleSlideFade.js" type="text/javascript"></script>
+	<script src="js/home.js" type="text/javascript"></script>
 </body>
 </html>

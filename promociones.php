@@ -21,41 +21,47 @@
 
 	<?php include("./includes/nav.php"); ?>
 
-	<section class="main">
+	<h3 class="foto"><span class="DN">Super Promo Abril</span></h3>
 
-	</section>
+	<div class="colIzq">
+		<p>
+			Con tu tarjeta Abriles Vip disfruta de los mejores descuentos.</br>
+			<strong>Oferta vigente:</strong></br>
+			<strong>50% de descuento</strong> hasta el 31 de diciembre de 2012.
+		</p>
 
-	<div id="background-slide">
-		<div class="slides-container">
-			<img src="./galerias/home/foto01.jpg" />
-			<img src="./galerias/home/foto01.jpg" />
-			<img src="./galerias/home/foto01.jpg" />
+		<p class="info last">
+		Paunero 1963, Martinez</br>
+		Horarios: lunes a viernes de 16 a 20</br>
+		Sabados de 10.30 a 14.30
+		</p>
+
+
+		<div class="tarjeta">
+			<span class="DN">Tarjeta Abriles Vip</span>
 		</div>
-		<!--nav class="slides-navigation">
-	   		<a href="#" class="next">Next</a>
-	    	<a href="#" class="prev">Previous</a>
-	  </nav-->
+
 	</div>
 
-	<script>
+	<div class="colDer">
+		<p>Durante los meses de <strong>Octubre y Noviembre</strong> te podes llevar un vestido de novia de raso satinado con sobrefalda de gasa de seda natural o muselina a $7000.</p>
 
-	/* scr.js - Little tiny loader for javascript sources. */
-	(function(a){window.scr={js:function(o,h){if(typeof o==="string"){o=[o]}var j,k,m,l,f,g,d;j=a.getElementsByTagName("script")[0];k={t:o.length,i:0};k.r=function(){return k.t===k.i};m=function(){k.i+=1;if(h&&k.r()){h()}};l=(function(){if(j.readyState){return function(b){b.onreadystatechange=function(){if(b.readyState==="loaded"||b.readyState==="complete"){b.onreadystatechange=null;m()}}}}else{return function(b){b.onload=function(){m()}}}}());f=0;g=a.createElement("script");for(f;f<k.t;f+=1){d=g.cloneNode(true);l(d);d.src=o[f];j.parentNode.insertBefore(d,j)}}}}(document));
+		<p>Tenés diferentes fajas para elegir. Viene en talle 1-2-3</p>
+	</div>
 
-	window.onload = function(){
+	<!-- jquery va en todas las pantallas -->
+	<script src="js/jquery.min.js"></script>
 
-		scr.js("js/jquery.min.js",function(){
+	<!-- Scripts para galeria autoscrolleable multiples fotos -->
+	<script src="js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+	<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+	<script src="js/jquery.kinetic.js" type="text/javascript"></script>
+	<script src="js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+	<script src="js/init.smoothdivscroll.js" type="text/javascript"></script>
 
-			scr.js(["js/jquery.easing-1.3.pack.js","js/simpleSlideFade.js","js/jquery.superslides.min.js"],function(){
+	<!-- Plugin para simple slider (Home) -->
+	<script src="js/simpleSlideFade.js" type="text/javascript"></script>
+	<script src="js/home.js" type="text/javascript"></script>
 
-					scr.js("js/global.js");
-
-			});
-
-		});
-
-	};
-
-	</script>
 </body>
 </html>

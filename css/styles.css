@@ -2,31 +2,40 @@
  * Reset
 */
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}strong{font-weight: bold;}
 
 /*
  * Fonts
 */
 
-/*
+
 @font-face {
-	font-family:"avenir-black";
-	src: url("../fonts/avenirltstd-black-webfont.eot");
+	font-family:"trajan-regular";
+	src: url("../fonts/TrajanPro-Regular.eot");
 	src: local("?"),
-	url("../fonts/avenirltstd-black-webfont.woof") format("woff"),
-	url("../fonts/avenirltstd-black-webfont.ttf") format("truetype"),
-	url("../fonts/avenirltstd-black-webfont.svg#blaimim_-webfont") format("svg");
+	url("../fonts/TrajanPro-Regular.woof") format("woff"),
+	url("../fonts/TrajanPro-Regular.ttf") format("truetype"),
+	url("../fonts/TrajanPro-Regular.svg#blaimim_-webfont") format("svg");
 }
 
 @font-face {
-	font-family:"avenir-light";
-	src: url("../fonts/avenirltstd-light-webfont.eot");
+	font-family:"trajan-bold";
+	src: url("../fonts/TrajanPro-Bold.eot");
 	src: local("?"),
-	url("../fonts/avenirltstd-light-webfont.woof") format("woff"),
-	url("../fonts/avenirltstd-light-webfont.ttf") format("truetype"),
-	url("../fonts/avenirltstd-light-webfont.svg#blaimim_-webfont") format("svg");
+	url("../fonts/TrajanPro-Bold.woof") format("woff"),
+	url("../fonts/TrajanPro-Bold.ttf") format("truetype"),
+	url("../fonts/TrajanPro-Bold.svg#blaimim_-webfont") format("svg");
 }
-*/
+
+@font-face {
+	font-family:"perpetua";
+	src: url("../fonts/perpetua.eot");
+	src: local("?"),
+	url("../fonts/perpetua.woof") format("woff"),
+	url("../fonts/perpetua.ttf") format("truetype"),
+	url("../fonts/perpetua.svg#blaimim_-webfont") format("svg");
+}
+
 /*
  * End Fonts
 */
@@ -48,6 +57,10 @@ html, body{
 }
 
 .DN{display:none;}
+
+.loading{
+	background: url('../img/loading.gif') 50% 50% no-repeat;
+}
 
 
 /*
@@ -73,15 +86,21 @@ html, body{
     z-index:9;
 }
 
-
 /*
- * Estilos para el header
+ * Estilos para el logo
 */
 
-header{
-	display: none;
+header h1 a{
+	position: absolute;
+	right: 30px;
+	bottom: 83px;
+	text-indent: -9999px;
+	z-index: 10;
+	display: block;
+	background: url("../img/logo-abril-chico.png") no-repeat;
+	width: 201px;
+	height: 64px;
 }
-
 
 /*
  * Estilos para el menu de navegación
@@ -102,16 +121,17 @@ header{
 
 .menuPrincipal li{
 	display: inline-block;
+	font-family: "trajan-regular", Arial, Helvetica;
 	margin-right: 20px;
 	line-height: 40px;
 	text-transform: uppercase;
+	font-size: 18px;
 }
 
 .menuPrincipal li a{
 	display: inline-block;
 	padding: 0 40px;
 	color: #fff;
-	font-size: 15px;
 	text-decoration: none;
 }
 
@@ -159,37 +179,43 @@ header{
 		top: 0;
 		bottom: 0px;
 		width: 360px;
+		font-size: 18px;
 	}
 
-
-/*
- * Estilos para logo abril
-*/
-
-[class*="logo-abril-"]{
-	position: absolute;
-	right: 30px;
-	bottom: 83px;
+.barra-vertical h3{
 	text-indent: -9999px;
-	z-index: 10;
-	display: block;
+	margin-bottom: 22px;
 }
 
-	.logo-abril-grande{
-		background: url("../img/logo-abril-grande.png") no-repeat;
-		width: 298px;
-		height: 95px;
-	}
+.barra-vertical h4{
+	line-height: 30px;
+}
 
-	.logo-abril-chico{
-		background: url("../img/logo-abril-chico.png") no-repeat;
-		width: 201px;
-		height: 64px;
-	}
+.barra-vertical p{
+	line-height: 30px;
+	margin-bottom: 15px;
+}
 
 /*
  * Home
 */
+
+body.home{
+	background: url("../galerias/home/background.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/home/foto01.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/home/foto01.jpg', sizingMethod='scale')";
+}
+
+.home header h1 a{
+	background: url("../img/logo-abril-grande.png") no-repeat;
+	width: 298px;
+	height: 95px;
+}
 
 .home .barra-horizontal > ul > li {
 	position: relative;
@@ -228,55 +254,50 @@ header{
 	display: none;
 }
 
-.home .barra-horizontal li.novias .slideshow{
+.home .barra-horizontal li .slideshow{
 	width: 255px;
 	height: 268px;
 }
-
 
 /*
  * Estilos para la seccion la marca
 */
 
 .la-marca .barra-horizontal p{
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 35px;
-	padding-left: 50px;
-	padding-right: 235px;
+	padding-left: 40px;
+	padding-right: 340px;
+	font-family: "perpetua", Arial, Helvetica;
+}
+
+.la-marca .barra-horizontal span{
+	display: block;
+	white-space: nowrap;
+}
+
+.la-marca .barra-horizontal p .alignLeft{
+	text-align: left;
+}
+
+.la-marca .barra-horizontal p .alignRight{
+	text-align: right;
 }
 
 /*
  * Estilos para la seccion novias y madrinas & fiestas
 */
 
-.novias-madrinas .barra-vertical {
-	font-size: 18px;
+.novias .barra-vertical h3{
+	width: 265px;
+	height: 112px;
+	background: url("../img/titulo-novias.png") no-repeat;
 }
 
-.novias-madrinas .barra-vertical h3{
-	text-indent: -9999px;
-	margin-bottom: 22px;
-}
-
-	.novias .barra-vertical h3{
-		width: 265px;
-		height: 112px;
-		background: url("../img/titulo-novias.png") no-repeat;
-	}
-
-	.madrinas .barra-vertical h3{
-		width: 317px;
-		height: 114px;
-		background: url("../img/titulo-madrinas.png") no-repeat;
-	}
-
-.novias-madrinas .barra-vertical h4{
-	line-height: 30px;
-}
-
-.novias-madrinas .barra-vertical p{
-	line-height: 30px;
-	margin-bottom: 15px;
+.madrinas .barra-vertical h3{
+	width: 317px;
+	height: 114px;
+	background: url("../img/titulo-madrinas.png") no-repeat;
 }
 
 .novias-madrinas .barra-vertical .mapa a{
@@ -290,11 +311,14 @@ header{
 
 .novias-madrinas .barra-horizontal li{
 	display: inline-block;
-	margin: 25px 176px 0 0;
+	margin: 18px 176px 0 0;
 	vertical-align: bottom;
 	text-transform: uppercase;
 	font-size: 25px;
-	width: 100px;
+	font-family: "trajan-regular", Arial, Helvetica;
+	width: 153px;
+	text-align: right;
+	line-height: 25px;
 }
 
 .novias-madrinas .barra-horizontal li a{
@@ -306,4 +330,252 @@ header{
 	color: #fff;
 }
 
+/*
+ * Estilos para promociones
+*/
 
+body.promociones{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image: url("../galerias/promociones/background.jpg");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/promociones/background.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/promociones/background.jpg', sizingMethod='scale')";
+}
+
+.promociones header h1 a{
+	background: url("../img/logo-abril-chico-sombra.png") no-repeat;
+	width: 209px;
+	height: 72px;
+}
+
+.promociones .foto{
+	width: 456px;
+	height: 555px;
+	background-image: url("../img/foto-novia-promocion.png");
+	position: absolute;
+	right: -38px;
+	bottom: 35px;
+}
+
+.promociones .colIzq,
+.promociones .colDer{
+	float: left;
+	font-family: "perpetua", Arial, Helvetica;
+	font-size: 31px;
+	line-height: 31px;
+	text-align: center;
+}
+
+.promociones .colIzq{
+	width: 40%;
+	margin-right: 5%;
+	padding-top: 100px;
+}
+
+.promociones p{
+	padding: 0 5px;
+	margin-bottom: 25px;
+}
+
+.promociones p.last{
+	margin-bottom: 0;
+}
+
+.promociones .colIzq p.info{
+	font-size: 26px;
+	line-height: 26px;
+}
+
+.promociones .colIzq .tarjeta{
+	width: 442px;
+	height: 314px;
+	background-image: url("../img/promociones-tarjeta.png");
+	position: absolute;
+	left: 20px;
+}
+
+.promociones .colDer{
+	width: 52%;
+	padding-top: 40px;
+}
+
+.promociones .colDer p{
+	width: 44%;
+	color: #000;
+}
+
+/*
+ * Estilos para oportunidades de negocio
+*/
+
+.oportunidades-de-negocio{
+	background: url("../galerias/home/background.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/home/foto01.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/home/foto01.jpg', sizingMethod='scale')";
+}
+
+.oportunidades-de-negocio .barra-vertical{
+	left: 0;
+}
+
+.oportunidades-de-negocio .barra-vertical h3{
+	background: url("../img/logo-abril-grande.png") no-repeat;
+	width: 298px;
+	height: 95px;
+}
+
+
+/*
+ * Mediaquerys
+*/
+
+@media screen and (min-width: 1024px) and (max-width: 1170px){
+
+	/* Menu de navegacion */
+	.menuPrincipal li a{
+		padding: 0 22px;
+	}
+
+	/* Barra vertical */
+	.barra-vertical{
+		left: 40px;
+	}
+
+	/* La Marca */
+	.la-marca .barra-horizontal p{
+		font-size: 25px;
+		line-height: 35px;
+		padding-left: 30px;
+	}
+
+	/* Novias y madrinas*/
+	.novias-madrinas .barra-vertical {
+		font-size: 19px;
+	}
+
+	.novias-madrinas .barra-vertical p{
+		line-height: 25px;
+		margin-bottom: 8px;
+	}
+
+	/* Promociones */
+	.promociones .foto{
+		right: -115px;
+		bottom: 25px;
+	}
+
+	.promociones .colIzq .tarjeta{
+		left: 5px;
+	}
+
+	.promociones .colIzq,
+	.promociones .colDer{
+		font-size: 28px;
+		line-height: 28px;
+	}
+
+	.promociones p{
+		margin-bottom: 18px;
+	}
+
+}
+
+@media screen and (max-width: 1023px) {
+
+	/* Menu de navegacion */
+	.menuPrincipal li{
+		margin-right: 0;
+		font-size: 15px;
+	}
+
+	.menuPrincipal li a{
+		padding: 0 10px
+	}
+
+	/* Barra vertical */
+	.barra-vertical{
+		left: 20px;
+	}
+
+	/* Barra horizontal*/
+	.barra-horizontal{
+		bottom: 45px;
+	}
+
+	.barra-vertical h4 {
+		line-height: 25px;
+	}
+
+	header h1 a{
+		bottom: 60px;
+	}
+
+	/* Homepage */
+	.home header h1{
+		display: none;
+	}
+
+	.home .barra-horizontal > ul > li{
+		margin-right: 10px;
+	}
+
+	/* La Marca */
+	.la-marca .barra-horizontal p{
+		font-size: 15px;
+		line-height: 35px;
+		padding-left: 10px;
+	}
+
+	/* Novias y madrinas*/
+	.novias-madrinas .barra-horizontal li {
+		margin: 18px 40px 0 0;
+		font-size: 18px;
+		width: 100px;
+	}
+
+	.novias-madrinas .barra-vertical {
+		font-size: 13px;
+	}
+
+	.novias-madrinas .barra-vertical p{
+		line-height: 18px;
+		margin-bottom: 2px;
+	}
+
+	/* Promociones */
+	.promociones .foto{
+		right: -210px;
+		bottom: -25px;
+	}
+
+	.promociones .colIzq{
+		padding-top: 40px;
+	}
+
+	.promociones .colIzq .tarjeta{
+		left: -60px;
+	}
+
+	.promociones .colIzq,
+	.promociones .colDer{
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	.promociones p{
+		margin-bottom: 15px;
+	}
+
+}
+
+@media screen and (max-width: 970px){
+
+
+}

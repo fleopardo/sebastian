@@ -11,9 +11,8 @@
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	<link rel="stylesheet" type="text/css" href="css/superslides.css" />
+	<link rel="Stylesheet" type="text/css" href="css/smoothDivScroll.css" />
 	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
-
 </head>
 <body class="la-marca">
 
@@ -22,43 +21,44 @@
 	<?php include("./includes/nav.php"); ?>
 
 	<section class="barra-horizontal">
-		<p>"Abriles no trabaja apartir del concepto de colecciónes por temporada</br>
-                sino que es una gran colección continua, formada por piezas únicas"</p>
+		<p>
+			<span class="alignLeft">"Abriles no trabaja apartir del concepto de colecciónes por temporada</span>
+			<span class="alignRight">sino que es una gran colección continua, formada por piezas únicas"</span>
+		</p>
 	</section>
 
-	<a href="./index.php" class="logo-abril-chico" title="Ir a la pagina principal">Abril</a>
-
-	<div id="background-slide">
-		<div class="slides-container">
-			<img src="./galerias/home/foto01.jpg" />
-			<img src="./galerias/home/foto01.jpg" />
-			<img src="./galerias/home/foto01.jpg" />
+	<div class="loading">
+		<div id="makeMeScrollable">
+			<img src="./galerias/la-marca/1.jpg" />
+			<img src="./galerias/la-marca/2.jpg" />
+			<img src="./galerias/la-marca/3.jpg" />
+			<img src="./galerias/la-marca/4.jpg" />
+			<img src="./galerias/la-marca/5.jpg" />
+			<img src="./galerias/la-marca/6.jpg" />
+			<img src="./galerias/la-marca/7.jpg" />
+			<img src="./galerias/la-marca/8.jpg" />
+			<img src="./galerias/la-marca/9.jpg" />
+			<img src="./galerias/la-marca/10.jpg" />
 		</div>
-		<nav class="slides-navigation">
-	   		<a href="#" class="next">Next</a>
-	    	<a href="#" class="prev">Previous</a>
-	  	</nav>
 	</div>
 
-	<script>
 
-	/* scr.js - Little tiny loader for javascript sources. */
-	(function(a){window.scr={js:function(o,h){if(typeof o==="string"){o=[o]}var j,k,m,l,f,g,d;j=a.getElementsByTagName("script")[0];k={t:o.length,i:0};k.r=function(){return k.t===k.i};m=function(){k.i+=1;if(h&&k.r()){h()}};l=(function(){if(j.readyState){return function(b){b.onreadystatechange=function(){if(b.readyState==="loaded"||b.readyState==="complete"){b.onreadystatechange=null;m()}}}}else{return function(b){b.onload=function(){m()}}}}());f=0;g=a.createElement("script");for(f;f<k.t;f+=1){d=g.cloneNode(true);l(d);d.src=o[f];j.parentNode.insertBefore(d,j)}}}}(document));
+	<!-- jquery va en todas las pantallas -->
+	<script src="js/jquery.min.js"></script>
 
-	window.onload = function(){
+	<!-- Scripts para galeria autoscrolleable multiples fotos -->
+	<script src="js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+	<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+	<script src="js/jquery.kinetic.js" type="text/javascript"></script>
+	<script src="js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+	<script src="js/init.smoothdivscroll.js" type="text/javascript"></script>
 
-		scr.js("js/jquery.min.js",function(){
+	<!-- Plugin para simple slider (Home) -->
+	<script src="js/simpleSlideFade.js" type="text/javascript"></script>
 
-			scr.js(["js/jquery.easing-1.3.pack.js","js/simpleSlideFade.js","js/jquery.superslides.min.js"],function(){
+	<!-- Plugin para simple slider (Home) -->
+	<script src="js/simpleSlideFade.js" type="text/javascript"></script>
+	<script src="js/home.js" type="text/javascript"></script>
 
-					scr.js("js/global.js");
-
-			});
-
-		});
-
-	};
-
-	</script>
 </body>
 </html>

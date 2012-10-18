@@ -1,6 +1,5 @@
 <header> <!-- header -->
 	<hgroup>
-		<h1>Abril</h1>
-		<h2>Vestidos de novias</h2>
+		<h1><a href="./">Abril</a></h1>
 	</hgroup>
 </header> <!-- /header -->

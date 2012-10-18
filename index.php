@@ -22,12 +22,11 @@
 	<?php include("./includes/nav.php"); ?>
 
 	<section class="barra-horizontal">
-
 		<ul>
 			<li class="novias">
 				<a href="./novias.php">
 					<h3>Novias</h3>
-					<div class="slideshow">
+					<div class="slideshow" id="slideNovias">
 						<img src="./galerias/home/novias/03.jpg" width="255" height="268" />
 						<img src="./galerias/home/novias/02.jpg" width="255" height="268" />
 						<img src="./galerias/home/novias/01.jpg" width="255" height="268" />
@@ -38,45 +37,32 @@
 			<li class="madrinas">
 				<a href="./madrinas.php">
 					<h3>Madrinas & Fiestas</h3>
-					<img src="./galerias/home/madrinas/01.jpg" width="255" height="268" />
+					<div class="slideshow" id="slideMadrinas">
+						<img src="./galerias/home/novias/02.jpg" width="255" height="268" />
+						<img src="./galerias/home/madrinas/01.jpg" width="255" height="268" />
+						<img src="./galerias/home/novias/02.jpg" width="255" height="268" />
+						<img src="./galerias/home/madrinas/01.jpg" width="255" height="268" />
+					</div>
 				</a>
 			</li>
 		</ul>
 	</section>
 
-	<a href="./index.php" class="logo-abril-grande" title="Ir a la pagina principal">Abril</a>
 
-	<div id="background-slide">
-		<div class="slides-container">
-			<img src="./galerias/home/foto01.jpg" />
-			<img src="./galerias/home/foto01.jpg" />
-			<img src="./galerias/home/foto01.jpg" />
-		</div>
-		<!--nav class="slides-navigation">
-	   		<a href="#" class="next">Next</a>
-	    	<a href="#" class="prev">Previous</a>
-	  	</nav-->
-	</div>
+	<!-- jquery va en todas las pantallas -->
+	<script src="js/jquery.min.js"></script>
 
-	<script>
+	<!-- Scripts para galeria autoscrolleable multiples fotos -->
+	<script src="js/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
+	<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+	<script src="js/jquery.kinetic.js" type="text/javascript"></script>
+	<script src="js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+	<script src="js/init.smoothdivscroll.js" type="text/javascript"></script>
 
-	/* scr.js - Little tiny loader for javascript sources. */
-	(function(a){window.scr={js:function(o,h){if(typeof o==="string"){o=[o]}var j,k,m,l,f,g,d;j=a.getElementsByTagName("script")[0];k={t:o.length,i:0};k.r=function(){return k.t===k.i};m=function(){k.i+=1;if(h&&k.r()){h()}};l=(function(){if(j.readyState){return function(b){b.onreadystatechange=function(){if(b.readyState==="loaded"||b.readyState==="complete"){b.onreadystatechange=null;m()}}}}else{return function(b){b.onload=function(){m()}}}}());f=0;g=a.createElement("script");for(f;f<k.t;f+=1){d=g.cloneNode(true);l(d);d.src=o[f];j.parentNode.insertBefore(d,j)}}}}(document));
+	<!-- Plugin para simple slider (Home) -->
+	<script src="js/simpleSlideFade.js" type="text/javascript"></script>
+	<script src="js/home.js" type="text/javascript"></script>
 
-	window.onload = function(){
 
-		scr.js("js/jquery.min.js",function(){
-
-			scr.js(["js/jquery.easing-1.3.pack.js","js/simpleSlideFade.js","js/jquery.superslides.min.js"],function(){
-
-					scr.js("js/global.js");
-
-			});
-
-		});
-
-	};
-
-	</script>
 </body>
 </html>

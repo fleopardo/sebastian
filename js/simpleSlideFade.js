@@ -4,15 +4,15 @@
 
 var simpleSlideFade = (function(){
 
-    function init(timer){
+    function init(slideshow,timer){
 
     	setInterval(function(){
 
-	    	var $active = $('.slideshow img.active');
+	    	var $active = $(slideshow + ' img.active');
 
-		    if ( $active.length == 0 ) $active = $('.slideshow img:last');
+		    if ( $active.length == 0 ) $active = $(slideshow + ' img:last');
 
-		    var $next =  $active.next().length ? $active.next() : $('.slideshow img:first');
+		    var $next =  $active.next().length ? $active.next() : $(slideshow + ' img:first');
 
 		    // uncomment the 3 lines below to pull the images in random order
 
