@@ -12,7 +12,10 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="Stylesheet" type="text/css" href="css/smoothDivScroll.css" />
-	<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
 
 </head>
 <body class="novias-madrinas novias">
@@ -78,8 +81,13 @@
 	<script src="js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
 	<script src="js/init.smoothdivscroll.js" type="text/javascript"></script>
 
-	<!-- Plugin para simple slider (Home) -->
+	<!-- Scripts para homepage -->
 	<script src="js/simpleSlideFade.js" type="text/javascript"></script>
 	<script src="js/home.js" type="text/javascript"></script>
+
+	<!--script para pantallas con background resizable -->
+	<script src="js/bg-resize-ie.js" type="text/javascript"></script>
+
+
 </body>
 </html>

@@ -75,15 +75,15 @@ html, body{
     position:absolute;
     top:0;
     left:0;
-    z-index:8;
+    z-index:20;
 }
 
 .slideshow img.active {
-    z-index:10;
+    z-index:20;
 }
 
 .slideshow img.last-active {
-    z-index:9;
+    z-index:19;
 }
 
 /*
@@ -95,7 +95,7 @@ header h1 a{
 	right: 30px;
 	bottom: 83px;
 	text-indent: -9999px;
-	z-index: 10;
+	z-index: 20;
 	display: block;
 	background: url("../img/logo-abril-chico.png") no-repeat;
 	width: 201px;
@@ -164,6 +164,8 @@ header h1 a{
 	position: absolute;
 	padding: 10px 20px;
 	background-color: rgba(0,0,0,.7);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000)";
 	z-index: 1;
 }
 
@@ -206,9 +208,6 @@ body.home{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/home/foto01.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/home/foto01.jpg', sizingMethod='scale')";
 }
 
 .home header h1 a{
@@ -227,6 +226,8 @@ body.home{
 
 .home .barra-horizontal > ul > li:hover{
 	background-color: rgba(255,255,255,.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90FFFFFF,endColorstr=#90FFFFFF);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#90FFFFFF,endColorstr=#90FFFFFF)";
 }
 
 .home .barra-horizontal > ul > li:hover > a{
@@ -340,8 +341,6 @@ body.promociones{
 	-o-background-size: cover;
 	background-size: cover;
 	background-image: url("../galerias/promociones/background.jpg");
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/promociones/background.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/promociones/background.jpg', sizingMethod='scale')";
 }
 
 .promociones header h1 a{
@@ -357,6 +356,7 @@ body.promociones{
 	position: absolute;
 	right: -38px;
 	bottom: 35px;
+	z-index: 10;
 }
 
 .promociones .colIzq,
@@ -394,6 +394,7 @@ body.promociones{
 	background-image: url("../img/promociones-tarjeta.png");
 	position: absolute;
 	left: 20px;
+	z-index: 1;
 }
 
 .promociones .colDer{
@@ -411,14 +412,11 @@ body.promociones{
 */
 
 .oportunidades-de-negocio{
-	background: url("../galerias/home/background.jpg") no-repeat center center fixed;
+	background: url("../galerias/oportunidades-de-negocios/background.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/home/foto01.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../galerias/home/foto01.jpg', sizingMethod='scale')";
 }
 
 .oportunidades-de-negocio .barra-vertical{
@@ -575,7 +573,55 @@ body.promociones{
 
 }
 
-@media screen and (max-width: 970px){
+/* Estilos para IE */
 
+.lt-ie9 .contentGlobal{
+	position: relative;
+	z-index: 10;
+	height: 100%;
+}
 
+.lt-ie9 .home,
+.lt-ie9 .oportunidades-de-negocio,
+.lt-ie9 .promociones{
+	background: none;
+}
+
+.lt-ie9 #bg {
+	display: block;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	min-height:100%;
+	z-index: 0;
+}
+
+.ie7 .menuPrincipal li{
+	display: inline;
+}
+
+.ie7 .menuPrincipal li a{
+	display: inline;
+}
+
+.ie7 .home .barra-horizontal > ul > li {
+	display: inline;
+}
+
+.ie7 .novias-madrinas .barra-horizontal li{
+	display: inline;
+}
+
+/* Promociones */
+.ie7 .promociones .foto{
+	display: none;
+}
+
+.ie7 .promociones .colIzq .tarjeta{
+	display: none;
+}
+
+.ie7 .promociones .colDer p{
+	width: auto;
 }
