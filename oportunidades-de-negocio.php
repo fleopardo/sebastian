@@ -38,7 +38,7 @@
 		<p>Estamos buscando potenciar la llegada de nuestros productos al interior del país atraves de eventos puntuales, esto esta especialmente pensado para mujeres con muchas inquietudes y gran convocatoria.</p>
 
 		<p>Si estas interesada por favor comunicarse atraves de este mail:</br>
-		abrilnovias@gmail.com</p>
+		<a href="mailto:abrilnovias@gmail.com">abrilnovias@gmail.com</a></p>
 
 	</section>
 

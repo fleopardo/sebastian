@@ -36,16 +36,20 @@
 			Sabados de 10.30 a 14.30</br>
 			Paunero 1963, Martinez
 		</p>
-		<p class="ver mapa"><a href="#">Ver mapa</a></p>
+		<p class="ver mapa"><a id="openMap" href="#">Ver mapa</a></p>
 
-		<h4>Abriles Recoleta</h4>
+		<div class="contentMap">
+			<div id="map"></div>
+		</div>
+
+		<!--h4>Abriles Recoleta</h4>
 		<p>
 			Horarios: lunes a vierne de 11 a 19.30</br>
 			Sabados de 11 a 13</br>
 			Av Alvear 1883</br>
 			Galeria Promenade, Local 35
 		</p>
-		<p class="ver mapa"><a href="#">Ver mapa</a></p>
+		<p class="ver mapa"><a href="#">Ver mapa</a></p-->
 
 	</section>
 
@@ -100,7 +104,13 @@
 	<script src="js/simpleSlideFade.js" type="text/javascript"></script>
 	<script src="js/home.js" type="text/javascript"></script>
 
-	<!--script para pantallas con background resizable -->
+	<!-- Script para pantallas con background resizable -->
 	<script src="js/bg-resize-ie.js" type="text/javascript"></script>
+
+	<!-- Scripts para levantar el modal con el mapa -->
+	<script type="text/javascript" src="js/jquery.simplemodal.1.4.2.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=es"></script>
+
+	<script type="text/javascript" src="js/madrinas.js"></script>
 </body>
 </html>

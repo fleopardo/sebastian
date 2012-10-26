@@ -38,8 +38,11 @@
 		Acassuso</br>
 		abrilnovias@gmail.com</p>
 
-		<p class="ver mapa"><a href="#">Ver mapa</a></p>
+		<p class="ver mapa"><a id="openMap" href="#">Ver mapa</a></p>
 
+		<div class="contentMap">
+			<div id="map"></div>
+		</div>
 
 	</section>
 
@@ -88,6 +91,11 @@
 	<!--script para pantallas con background resizable -->
 	<script src="js/bg-resize-ie.js" type="text/javascript"></script>
 
+	<!-- Scripts para levantar el modal con el mapa -->
+	<script type="text/javascript" src="js/jquery.simplemodal.1.4.2.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=es"></script>
+
+	<script type="text/javascript" src="js/madrinas.js"></script>
 
 </body>
 </html>

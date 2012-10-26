@@ -331,6 +331,23 @@ body.home{
 	color: #fff;
 }
 
+/* Necesario para darle padding al mapa.
+Si se lo doy al mismo div que se inicializa el mapa no me lo toma. */
+/* Si lo oculto con display:none el mapa no inicializa
+Al abrir el modal saco el visibility hidden */
+.contentMap{
+	padding: 30px 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+#map{
+	width: 500px;
+	height:350px;
+}
+
 /*
  * Estilos para promociones
 */
@@ -429,6 +446,36 @@ body.promociones{
 	height: 95px;
 }
 
+.oportunidades-de-negocio .barra-vertical a{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
+
+/*
+ * Simple Modal
+*/
+
+/* Simple Modal */
+
+#simplemodal-overlay {
+	background-color:#000;
+}
+
+#simplemodal-container a.modalCloseImg {
+	background: url(../img/cerrar.gif) no-repeat;
+	width: 30px;
+	height: 30px;
+	display: inline;
+	z-index: 3200;
+	position: absolute;
+	top: 30px;
+	right: 41px;
+	cursor: pointer;
+}
 
 /*
  * Mediaquerys
