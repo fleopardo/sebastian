@@ -1,13 +1,17 @@
 .tus-tiendas .content h3{
     font-size: 21px;
-    margin-bottom: 20px;
 }
+
 
 /* Seccion facebook */
 
 .tus-tiendas .content .facebook{
     margin-bottom: 50px;
     overflow: hidden;
+}
+
+.tus-tiendas .content .facebook h3{
+    margin-bottom: 20px;
 }
 
 .tus-tiendas .content .facebook .left-column,
@@ -23,6 +27,7 @@
     float: left;
     width: 60%;
     margin-left: 7%;
+    padding-top: 155px;
 }
 
 .tus-tiendas .content .facebook ol {
@@ -35,9 +40,70 @@
     margin-bottom: 20px;
 }
 
+.tus-tiendas .content .facebook .sincronice{
+    color: #bebfc4;
+    margin-bottom: 10px;
+}
+
+.tus-tiendas .content .facebook .sincronice a{
+    display: inline-block;
+    color: #fff;
+    background: #bebfc4;
+    padding: 5px 20px;
+    margin-right: 10px;
+}
+
+.tus-tiendas .content .facebook .sincronice a:hover{
+    background: #ff7400;
+}
+
+.tus-tiendas .content .facebook .sincronice .icon{
+    width: 17px;
+    height: 14px;
+    background: url("./assets/icons-sincronice.png") no-repeat top left;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
+
+.tus-tiendas .content .facebook .sincronice.ok{
+    color: #ff7400;
+}
+
+.tus-tiendas .content .facebook .sincronice.ok .icon{
+    background-position: bottom left;
+    position: relative;
+    top: -2px;
+}
+
 
 /* Seccion tu sitio */
 
 .tus-tiendas .content .tu-sitio{
     overflow: hidden;
 }
+
+.tus-tiendas .content .tu-sitio .row{
+    margin-bottom: 20px;
+}
+
+.tus-tiendas .content .tu-sitio label{
+    display: inline-block;
+    width: 33%;
+    margin-right: 7%;
+    vertical-align: middle;
+}
+
+.tus-tiendas .content .tu-sitio .row textarea,
+.tus-tiendas .content .tu-sitio .row input[type="text"]{
+    width: 56%;
+    vertical-align: middle;
+    padding: 1%;
+}
+
+.tus-tiendas .content .tu-sitio .row textarea{
+    height: 70px;
+}
+
+
