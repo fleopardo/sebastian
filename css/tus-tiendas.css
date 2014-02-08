@@ -1,0 +1,43 @@
+.tus-tiendas .content h3{
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+/* Seccion facebook */
+
+.tus-tiendas .content .facebook{
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.tus-tiendas .content .facebook .left-column,
+.tus-tiendas .content .facebook .right-column{
+    float: left;
+}
+
+.tus-tiendas .content .facebook .left-column{
+    width: 33%;
+}
+
+.tus-tiendas .content .facebook .right-column{
+    float: left;
+    width: 60%;
+    margin-left: 7%;
+}
+
+.tus-tiendas .content .facebook ol {
+    margin-top: 20px;
+}
+
+.tus-tiendas .content .facebook ol li{
+    list-style: decimal;
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+
+/* Seccion tu sitio */
+
+.tus-tiendas .content .tu-sitio{
+    overflow: hidden;
+}

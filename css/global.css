@@ -4,6 +4,8 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 
 
 /* CLEARFIX */
+
+
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 .clearfix{display:inline-block;}
 * html .clearfix{height:1%;}
@@ -11,6 +13,8 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 
 
 /* HELPERS */
+
+
 .DN{display:none;}
 .left{float: left;}
 .right{float: right;}
@@ -21,9 +25,13 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 
 
 /* GENERALS */
+
+
 body{
     background: #f3f3f4;
-    margin-top: 50px;
+    margin: 80px 0;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 .wrapper-principal{
@@ -31,7 +39,12 @@ body{
     margin: 0 auto;
 }
 
+
+
+
 /* HEADER */
+
+
 header{
     position: absolute;
     left: 0;
@@ -86,5 +99,61 @@ header nav li img.profile{
 header nav li .submenu{
     display: none;
 }
+
+
+
+/* NAV */
+
+
+.nav-principal{
+    
+}
+
+.nav-principal li{
+    width: 33.3%;
+    float: left;
+}
+
+.nav-principal a{
+    display: block;
+    font-size: 28px;
+    text-align: center;
+    color: #211915;
+    line-height: 42px;
+    height: 42px;
+}
+
+.nav-principal a.active{
+    background: #e8e9eb;
+    border: 2px solid #dcdcdd;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    bottom: -2px;
+    line-height: 35px;
+}
+
+.nav-principal{}
+
+.nav-principal{}
+
+
+
+
+/* CONTENT */
+
+
+.wrapper-principal .content {
+    background: #e8e9eb;
+    border: 2px solid #dcdcdd;
+    border-radius: 5px;
+    padding: 80px;
+}
+
+
+
+
+
 
 
