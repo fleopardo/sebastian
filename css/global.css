@@ -77,7 +77,7 @@ header nav{
 }
 
 header nav ul{
-    line-height: 50px;
+    line-height: 45px;
 }
 
 header nav li{
@@ -96,18 +96,53 @@ header nav li img.profile{
     vertical-align: middle;
 }
 
-header nav li .submenu{
-    display: none;
+header .submenu-trigger{
+    border-bottom: 5px solid transparent;
+    position: relative;
+    cursor: pointer;
+    padding-right: 15px;
 }
 
+header .submenu-trigger:before{
+    content: " ";
+    position: absolute;
+    top: 21px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white;
+}
+
+header .submenu-trigger:hover{
+    border-color: #f87304;
+}
+
+header .submenu-trigger:hover > .submenu{
+    display: block;
+}
+
+header nav li .submenu{
+    position: absolute;
+    display: none;
+    top: 50px;
+    right: 0;
+    width: 100px;
+}
+
+header nav li .submenu a{
+    background: #ffdfc8;
+    color: #000;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    line-height: 25px;
+    margin-bottom: 2px;
+}
 
 
 /* NAV */
-
-
-.nav-principal{
-    
-}
 
 .nav-principal li{
     width: 33.33%;
@@ -133,12 +168,6 @@ header nav li .submenu{
     bottom: -2px;
     line-height: 35px;
 }
-
-.nav-principal{}
-
-.nav-principal{}
-
-
 
 
 /* CONTENT */
