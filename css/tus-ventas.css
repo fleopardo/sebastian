@@ -68,11 +68,11 @@
 
 /* Resumen anual */
 
-.tus-ventas .submenu{
+.tus-ventas .resumen-anual .submenu{
     position: relative;
 }
 
-.tus-ventas .submenu ul{
+.tus-ventas .resumen-anual .submenu ul{
     display: none;
     position: absolute;
     right: 0;
@@ -80,7 +80,7 @@
     z-index: 2;
 }
 
-.tus-ventas .submenu ul li a{
+.tus-ventas .resumen-anual .submenu ul li a{
     display: block;
     background: #f3f3f4;
     border-bottom: 1px solid #e5e6e8;
@@ -89,7 +89,7 @@
     font-size: 12px;
 }
 
-.tus-ventas .submenu ul li a:hover{
+.tus-ventas .resumen-anual .submenu ul li a:hover{
     display: block;
     background: #f9b37a;
     border-bottom: 1px solid #f9b37a;
