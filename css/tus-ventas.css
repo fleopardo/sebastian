@@ -1,0 +1,131 @@
+.tus-ventas .content h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.tus-ventas .content{
+    overflow: hidden;
+}
+
+.tus-ventas .column{
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+}
+
+/* Grafico */
+
+.tus-ventas .graph{
+    margin-bottom: 20px;
+}
+
+.tus-ventas .graph img{
+    display: block;
+    margin: 0 auto;
+    width: 100%
+}
+
+/* Ultimas ventas */
+
+.tus-ventas .ultimas-ventas .title-acordeon{
+    font-size: 12px;
+    line-height: 36px;
+    color: #000;
+    background: #f3f3f3;
+    padding: 0 8px;
+    border-bottom: 2px solid #d0d0d0;
+    position: relative;
+    cursor: pointer;
+}
+
+.tus-ventas .ultimas-ventas .title-acordeon:hover + table{
+    display: table;
+}
+
+.tus-ventas .ultimas-ventas .title-acordeon:before{
+    content: " ";
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+}
+
+.tus-ventas .ultimas-ventas table{
+    /*display: none;*/
+    background: #dfe0e3;
+    font-size: 10px;
+    width: 100%;
+}
+
+.tus-ventas .ultimas-ventas table td{
+    padding-left: 8px;
+}
+
+
+/* Resumen anual */
+
+.tus-ventas .submenu{
+    position: relative;
+}
+
+.tus-ventas .submenu ul{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    z-index: 2;
+}
+
+.tus-ventas .submenu ul li a{
+    display: block;
+    background: #f3f3f4;
+    border-bottom: 1px solid #e5e6e8;
+    padding: 3px 8px;
+    color: #000;
+    font-size: 12px;
+}
+
+.tus-ventas .submenu ul li a:hover{
+    display: block;
+    background: #f9b37a;
+    border-bottom: 1px solid #f9b37a;
+}
+
+.tus-ventas .resumen-anual h3{
+    position: relative;
+    cursor: pointer;
+}
+
+.tus-ventas .resumen-anual .submenu:hover ul{
+    display: block;
+}
+
+.tus-ventas .resumen-anual h3:before{
+    content: " ";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+}
+
+.tus-ventas .resumen-anual table{
+    width: 100%;
+    font-size: 12px;
+}
+
+.tus-ventas .resumen-anual td{
+    padding: 8px 0;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.tus-ventas .resumen-anual .dest{
+    color: #ff7400;
+}

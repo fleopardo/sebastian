@@ -129,6 +129,7 @@ header nav li .submenu{
     top: 50px;
     right: 0;
     width: 100px;
+    z-index: 2;
 }
 
 header nav li .submenu a{
