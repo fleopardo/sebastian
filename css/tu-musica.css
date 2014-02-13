@@ -1,0 +1,17 @@
+.tu-musica .content{
+    padding-left: 105px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.tu-musica .content > nav{
+    position: absolute;
+    left: 20px;
+}
+
+.tu-musica .wrapper-content{
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid #dcdcdd;
+    padding: 30px 60px;
+}

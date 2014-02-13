@@ -145,6 +145,11 @@ header nav li .submenu a{
 
 /* NAV */
 
+.nav-principal{
+    z-index: 1;
+    position: relative;
+}
+
 .nav-principal li{
     width: 33.33%;
     float: left;
@@ -180,10 +185,4 @@ header nav li .submenu a{
     border-radius: 5px;
     padding: 80px;
 }
-
-
-
-
-
-
 

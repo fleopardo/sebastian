@@ -1,0 +1,30 @@
+.tu-musica .wrapper-content{
+    margin-left: 107px;
+    position: relative;
+}
+
+.tu-musica .wrapper-content:before{
+    position: absolute;
+    content: " ";
+    background: #fff url('./assets/icon-diseno.jpg') no-repeat center center;
+    top: -2px;
+    left: -109px;
+    width: 107px;
+    height: 107px;
+    border: 2px solid #dcdcdd;
+    border-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.diseno .container-images{
+    
+}
+
+.diseno .container-images img:first-of-type{
+    display: block;
+}
+
+.diseno .container-images img{
+    display: none;
+}
