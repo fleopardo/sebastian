@@ -1,6 +1,4 @@
 .tu-musica .wrapper-content{
-    margin-left: 107px;
-    position: relative;
 }
 
 .tu-musica .wrapper-content:before{
@@ -18,7 +16,7 @@
 }
 
 .diseno .container-images{
-    
+    margin-bottom: 30px;
 }
 
 .diseno .container-images img:first-of-type{
@@ -28,3 +26,34 @@
 .diseno .container-images img{
     display: none;
 }
+
+.diseno .colors-selector dl{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.diseno .colors-selector dl:first-of-type{
+    border-right: 2px solid #ccc;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.diseno .colors-selector dt{
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.diseno .colors-selector dd{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    overflow: hidden;
+    text-indent: -100px;
+    border: 2px solid #eee;
+}
+
+.diseno .colors-selector dd:hover,
+.diseno .colors-selector dd.selected{
+    border-color: #ccc;
+}
+

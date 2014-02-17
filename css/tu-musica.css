@@ -14,4 +14,30 @@
     border-radius: 5px;
     border: 2px solid #dcdcdd;
     padding: 30px 60px;
+    margin-left: 150px;
+    position: relative;
+}
+
+.tu-musica .content nav{
+        
+}
+
+.tu-musica .content nav ul{
+    border-left: 3px solid #ccc;
+    padding-right: 5px;
+}
+
+.tu-musica .content nav a{
+    color: #828185;
+    display: block;
+    padding: 0 20px;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: lighter;
+}
+
+.tu-musica .content nav a:hover,
+.tu-musica .content nav a.active{
+    color: #fff;
+    background: #ff7400;
 }

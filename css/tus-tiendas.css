@@ -17,6 +17,7 @@
 .tus-tiendas .content .facebook .left-column,
 .tus-tiendas .content .facebook .right-column{
     float: left;
+    font-size: 12px;
 }
 
 .tus-tiendas .content .facebook .left-column{
