@@ -17,7 +17,7 @@
     <![endif]-->
 </head>
 <body class="panel tu-musica albumes">
-    
+
     <!-- Header -->
     <header>
         <div class="wrapper-principal">
@@ -25,10 +25,10 @@
 
             <nav>
                 <h2 class="title-outline">Mi cuenta</h2>
-                
+
                 <ul>
                     <li><a href="ayuda.html">Ayuda?</a></li>
-                
+
                     <li class="submenu-trigger">
                         <img src="css/assets/profile.png" width="35" height="35" class="profile"/> JiustonBuenosAires
                         <div class="submenu">
@@ -61,14 +61,86 @@
             <nav>
                 <h3 class="title-outline">Opciones</h3>
                 <ul>
-                    <li><a href="tu-musica.html" class="active">Álbumes</a></li>
-                    <li><a href="diseno.html">Diseño</a></li>
+                    <li><a href="tu-musica.html" class="active albumes"><span></span> Álbumes</a></li>
+                    <li><a href="diseno.html" class="diseno"><span></span> Diseño</a></li>
                 </ul>
             </nav>
 
             <div class="wrapper-content">
-                <form name="" method="" action="">
-                    
+
+                <form name="" id="subir-album" method="" action="">
+                    <div class="left-fields">
+                        <input type="text" value="" placeholder="Título del álbum"/>
+                        <input type="text" value="" placeholder="Nombre del artista"/>
+                        <input type="text" value="" placeholder="Año de publicación"/>
+                    </div>
+
+                    <div class="right-fields">
+
+                        <div class="row">
+                            <p>
+                                <label for="genero">Género musical</label>
+                                <input type="text" value="" id="genero" />
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <p>
+                                <label for="creditos">Créditos</label>
+                                <textarea id="creditos"></textarea>
+                            </p>
+
+                            <p>
+                                <label for="agradecimientos">Agradecimientos</label>
+                                <textarea placeholder="opcional" id="agradecimientos"></textarea>
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <p>
+                                <label for="upc">Código UPC/EAN</label>
+                                <input type="text" value="" placeholder="opcional" id="upc"/>
+                            </p>
+
+                            <p>
+                                <label for="tags">Tags</label>
+                                <input type="text" value="" placeholder="opcional" id="tags"/>
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <p>Precio sugerido ARS$ <input type="number" /></p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </form>
             </div>
 

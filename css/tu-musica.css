@@ -13,13 +13,13 @@
     background: #fff;
     border-radius: 5px;
     border: 2px solid #dcdcdd;
-    padding: 30px 60px;
+    padding: 30px 20px;
     margin-left: 150px;
     position: relative;
 }
 
 .tu-musica .content nav{
-        
+
 }
 
 .tu-musica .content nav ul{
@@ -30,14 +30,92 @@
 .tu-musica .content nav a{
     color: #828185;
     display: block;
-    padding: 0 20px;
+    padding: 0 20px 0 35px;
     font-size: 12px;
     line-height: 30px;
     font-weight: lighter;
+    position: relative;
+}
+
+.tu-musica .content nav a span{
+    background: url("./assets/icons_tu-musica.png") no-repeat top left;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 8px;
+    top: 0px;
+}
+
+
+.tu-musica .content nav a.albumes:hover span,
+.tu-musica .content nav a.albumes.active span{
+    background-position: -24px 0;
+}
+
+.tu-musica .content nav a.diseno span{
+    background-position: 0 -30px;
+}
+
+.tu-musica .content nav a.diseno:hover span,
+.tu-musica .content nav a.diseno.active span{
+    background-position: -24px -30px;
 }
 
 .tu-musica .content nav a:hover,
 .tu-musica .content nav a.active{
     color: #fff;
-    background: #ff7400;
+    background-color: #ff7400;
 }
+
+
+/* Formulario */
+
+.tu-musica .content #subir-album{
+    overflow: auto
+}
+
+.tu-musica .content #subir-album .left-fields{
+    float: left;
+    margin-right: 35px;
+    width: 200px;
+}
+
+.tu-musica .content #subir-album .left-fields input{
+    border: none;
+}
+
+.tu-musica .content #subir-album .right-fields{
+    width: 340px;
+    float: right;
+}
+
+.tu-musica .content #subir-album .right-fields .row{
+    border-bottom: 3px solid #ffead8;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.tu-musica .content #subir-album .right-fields .row:last-of-type{
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.tu-musica .content #subir-album .right-fields .row p{
+    margin-bottom: 10px;
+}
+
+.tu-musica .content #subir-album .right-fields label{
+    display: block;
+}
+
+.tu-musica .content #subir-album .right-fields textarea,
+.tu-musica .content #subir-album .right-fields input{
+    width: 98%;
+}
+
+.tu-musica .content #subir-album .right-fields textarea{
+    height: 80px;
+}
+
