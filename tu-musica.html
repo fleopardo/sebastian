@@ -70,9 +70,9 @@
 
                 <form name="" id="subir-album" method="" action="">
                     <div class="left-fields">
-                        <input type="text" value="" placeholder="Título del álbum"/>
-                        <input type="text" value="" placeholder="Nombre del artista"/>
-                        <input type="text" value="" placeholder="Año de publicación"/>
+                        <input type="text" placeholder="Título del álbum" class="album" />
+                        <input type="text" placeholder="Nombre del artista" class="artist" />
+                        <input type="text" placeholder="Año de publicación" class="year"/>
                     </div>
 
                     <div class="right-fields">
@@ -108,13 +108,20 @@
                             </p>
                         </div>
 
-                        <div class="row">
-                            <p>Precio sugerido ARS$ <input type="number" /></p>
+                        <div class="row suggested-price">
+                            <p>
+                                <label for="suggested-price">Precio sugerido ARS$ </label>
+                                <input type="number" id="suggested-price" />
+                            </p>
                         </div>
+
                     </div>
 
 
-
+                    <div class="actions">
+                        <input type="submit" />
+                        <label><input type="checkbox" /> Publicar</label>
+                    </div>
 
 
 
