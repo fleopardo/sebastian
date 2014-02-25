@@ -1,0 +1,134 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 ie6" lang="es"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7" lang="es"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9 ie8" lang="es"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10 ie9" lang="es"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+<head>
+    <title>Spondymus</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/mis-datos.css" />
+    <!--[if lt IE 9]>
+        <script src="js/libs/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="panel mis-datos">
+
+    <!-- Header -->
+    <header>
+        <div class="wrapper-principal">
+            <h1><a href="#">Spondymus</a></h1>
+
+            <nav>
+                <h2 class="title-outline">Mi cuenta</h2>
+
+                <ul>
+                    <li><a href="ayuda.html">Ayuda?</a></li>
+
+                    <li class="submenu-trigger">
+                        <img src="css/assets/profile.png" width="35" height="35" class="profile"/> JiustonBuenosAires
+                        <div class="submenu">
+                            <a href="mis-datos.html">Mis datos</a>
+                            <a href="log-out.html">Salir</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /Header -->
+
+
+    <!-- Content -->
+    <div class="wrapper-principal">
+
+        <nav class="nav-principal">
+            <h2 class="title-outline">Elije una seccion</h2>
+            <ul class="clearfix">
+                <li><a href="tu-musica.html" class="active">Mis datos</a></li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <h2 class="title-outline">Tus datos</h2>
+
+            <div class="wrapper-content">
+
+                <form name="" id="subir-datos" method="" action="">
+
+                    <div class="left-fields">
+
+                        <div class="row">
+                            <label for="userName">Nombre de Usuario</label>
+                            <input type="text" placeholder="Nombre de Usuario" id="userName" />
+                        </div>
+
+                        <div class="row">
+                            <label for="email">Email</label>
+                            <input type="text" placeholder="Email" id="email" />
+                        </div>
+
+                        <div class="row">
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="Password" id="password" />
+                        </div>
+
+                        <div class="row">
+                            <label for="artistName">Nombre principal<br> del artista o banda</label>
+                            <input type="text" placeholder="Nombre artista" id="artistName" />
+                        </div>
+
+                        <div class="row">
+                            <label for="residencia">País de residencia</label>
+                            <input type="text" placeholder="País de residencia" id="residencia" />
+                        </div>
+
+                        <div class="row">
+                            <label for="name">Nombre</label>
+                            <input type="text" placeholder="Nombre" id="name" />
+                        </div>
+
+                        <div class="row">
+                            <label for="lastName">Apellido</label>
+                            <input type="text" placeholder="Apellido" id="lastName" />
+                        </div>
+
+                    </div>
+                    
+                    <div class="right-fields">
+                        <div class="row">
+                            <!-- http://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
+                            
+                            http://jsfiddle.net/LvsYc/
+
+                             -->
+                            <label for="imgInp">Imágen de perfil</label>
+                            <input type="file" id="imgInp">
+
+                            
+                            <div class="preview-container">
+                                <img id="blah" src="#" alt="your image" />
+                                <div id="preview_ie"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+    </div>
+    <!-- /Content -->
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/mis-datos.js"></script>
+    <!--[if gte IE 7]> 
+        <script type="text/javascript" src="js/mis-datos-ie.js"></script>
+    <![endif]-->
+</body>
+</html>
