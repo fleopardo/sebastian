@@ -1,0 +1,50 @@
+.ayuda .content h3{
+    font-size: 21px;
+    line-height: 24px;
+}
+
+.ayuda .wrapper-principal .content{
+	padding: 0;
+	background: #f3f3f4;
+	border: none;
+}
+
+.ayuda .content .left-column{
+	width: 33.33%;
+	background: #e8e9eb;
+}
+
+.ayuda .content .left-column > div{
+	border-left: 2px solid #dcdcdd;
+	border-right: 2px solid #dcdcdd;
+	padding: 15px;
+}
+
+
+.ayuda .content .left-column > div > div{
+	margin-bottom: 20px;
+	display: none;
+}
+
+.ayuda .content .left-column h3{
+	font-size: 17px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.ayuda .content .left-column h3.active{
+	color: #ff7400;
+}
+
+.ayuda .content .left-column li a{
+	font-size: 12px;
+	line-height: 17px;
+	display: block;
+	color: #211915;
+	margin-bottom: 2px;
+}
+
+.ayuda .content .left-column li a:hover{
+	background: #ff7400;
+}
