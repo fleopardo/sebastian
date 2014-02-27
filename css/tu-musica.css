@@ -12,6 +12,7 @@
 .tu-musica .wrapper-content{
     background: #fff;
     border-radius: 5px;
+    border-top-left-radius: 0;
     border: 2px solid #dcdcdd;
     padding: 30px 20px;
     margin-left: 150px;
@@ -75,6 +76,64 @@
     overflow: auto
 }
 
+.tu-musica .content #subir-album ::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #999;
+}
+.tu-musica .content #subir-album :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #999;
+}
+.tu-musica .content #subir-album ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #999;
+}
+.tu-musica .content #subir-album :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #999;
+}
+
+.tu-musica .content #subir-album .cargar-imagen{
+    width: 107px;
+    height: 100px;
+    position: absolute;
+    top: -2px;
+    left: -109px;
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px solid #dcdcdd;
+    border-right: 0;
+}
+
+.tu-musica .content #subir-album .cargar-imagen p{
+    position: relative;
+    margin-top: 13px;
+    margin-left: 11px;
+}
+
+.tu-musica .content #subir-album .cargar-imagen p .drag-section{
+    width: 11px;
+    height: 74px;
+    display: block;
+    background: url("./assets/drag-section.jpg") no-repeat top left;
+    position: absolute;
+    cursor: move;
+}
+
+
+.tu-musica .content #subir-album .cargar-imagen label{
+    display: block;
+    width: 72px;
+    height: 72px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    text-indent: -200px;
+    margin-left: 11px;
+    cursor: pointer;
+    background: url("./assets/cargar-imagen.jpg") no-repeat center center;
+}
+
+.tu-musica .content #subir-album .cargar-imagen input{
+    display: none !important;
+}
+
 .tu-musica .content #subir-album .left-fields{
     float: left;
     margin-right: 35px;
@@ -83,6 +142,27 @@
 
 .tu-musica .content #subir-album .left-fields input{
     border: none;
+    padding: 3px;
+    width: 80%;
+    display: block;
+    border-bottom: 2px solid transparent;
+    line-height: 17px;
+}
+
+    .tu-musica .content #subir-album .left-fields input.album{
+        font-size: 17px;
+    }
+
+    .tu-musica .content #subir-album .left-fields input.artist{
+        font-size: 13px;
+    }
+
+    .tu-musica .content #subir-album .left-fields input.year{
+        font-size: 11px;
+    }
+
+.tu-musica .content #subir-album .left-fields input:focus{
+    border-color: #eee;
 }
 
 .tu-musica .content #subir-album .right-fields{
@@ -108,14 +188,48 @@
 
 .tu-musica .content #subir-album .right-fields label{
     display: block;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333;
+    margin-bottom: 3px;
 }
 
 .tu-musica .content #subir-album .right-fields textarea,
 .tu-musica .content #subir-album .right-fields input{
-    width: 98%;
+    width: 97%;
+    border: 2px solid #eee;
+    padding: 3px;
 }
 
 .tu-musica .content #subir-album .right-fields textarea{
     height: 80px;
+}
+
+.tu-musica .content #subir-album .right-fields .suggested-price label,
+.tu-musica .content #subir-album .right-fields .suggested-price input{
+    display: inline-block;
+}
+
+.tu-musica .content #subir-album .right-fields .suggested-price input[type="number"]{
+    width: 30px;
+}
+
+.tu-musica .content #subir-album .right-fields .suggested-price input[type="checkbox"]{
+    width: auto;
+}
+
+.tu-musica .content .actions{
+    clear:both;
+    color: #828185;
+    font-size: 12px;
+}
+
+.tu-musica .content .actions input[type="submit"]{
+    background: #bebfc4;
+    padding: 5px 20px;
+    color: #fff;
+    text-transform: lowercase;
+    border: none;
+    cursor: pointer;
 }
 

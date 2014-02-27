@@ -69,10 +69,20 @@
             <div class="wrapper-content">
 
                 <form name="" id="subir-album" method="" action="">
+
+
                     <div class="left-fields">
-                        <input type="text" value="" placeholder="Título del álbum"/>
-                        <input type="text" value="" placeholder="Nombre del artista"/>
-                        <input type="text" value="" placeholder="Año de publicación"/>
+                        <input type="text" placeholder="Título del álbum" class="album" />
+                        <input type="text" placeholder="Nombre del artista" class="artist" />
+                        <input type="text" placeholder="Año de publicación" class="year"/>
+
+                        <div class="cargar-imagen">
+                            <p>
+                                <span class="drag-section"></span>
+                                <label for="cargar-imagen">Cargar imagen</label>
+                            </p>
+                            <input type="file" id="cargar-imagen" />
+                        </div>
                     </div>
 
                     <div class="right-fields">
@@ -108,13 +118,22 @@
                             </p>
                         </div>
 
-                        <div class="row">
-                            <p>Precio sugerido ARS$ <input type="number" /></p>
+                        <div class="row suggested-price">
+                            <p>
+                                <label for="suggested-price">Precio sugerido ARS$ </label>
+                                <input type="number" id="suggested-price" />
+
+                                <p><label><input type="checkbox" />habilitar que el comprador pague más si lo desea</label></p>
+                            </p>
                         </div>
+
                     </div>
 
 
-
+                    <div class="actions">
+                        <input type="submit" value="guardar"/>
+                        <label><input type="checkbox" /> Publicar</label>
+                    </div>
 
 
 
