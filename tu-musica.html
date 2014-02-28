@@ -100,9 +100,12 @@
                 <form name="" id="subir-album" method="" action="">
 
                     <div class="left-fields">
-                        <input type="text" placeholder="Título del álbum" class="album" />
-                        <input type="text" placeholder="Nombre del artista" class="artist" />
-                        <input type="text" placeholder="Año de publicación" class="year"/>
+
+                        <div class="principal-data">
+                            <input type="text" placeholder="Título del álbum" class="album" />
+                            <input type="text" placeholder="Nombre del artista" class="artist" />
+                            <input type="text" placeholder="Año de publicación" class="year"/>
+                        </div>
 
                         <div class="cargar-imagen">
                             <p>
@@ -110,6 +113,8 @@
                             </p>
                             <input type="file" id="cargar-imagen" />
                         </div>
+
+                        <a href="cargar-cancion.html" class="cargar-cancion">Cargar canción</a>
                     </div>
 
                     <div class="right-fields">
@@ -160,6 +165,7 @@
                     <div class="actions">
                         <input type="submit" value="guardar"/>
                         <label><input type="checkbox" /> Publicar</label>
+                        <a href="#" class="delete" title="Eliminar">Eliminar</a>
                     </div>
 
 
