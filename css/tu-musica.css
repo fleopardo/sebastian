@@ -2,6 +2,7 @@
     padding-left: 105px;
     padding-right: 20px;
     position: relative;
+    overflow: hidden
 }
 
 .tu-musica .content > nav{
@@ -70,6 +71,34 @@
 }
 
 
+/* Album List */
+
+.tu-musica .content .album-list{
+    margin-left: 54px;
+    margin-top: 115px;
+    float: left;
+}
+
+.tu-musica .content .album-list .drag-section{
+    width: 11px;
+    height: 74px;
+    display: block;
+    background: url("./assets/drag-section.jpg") no-repeat top left;
+    position: absolute;
+    cursor: move;
+}
+
+.tu-musica .content .album-list li{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.tu-musica .content .album-list li a{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
 /* Formulario */
 
 .tu-musica .content #subir-album{
@@ -105,16 +134,7 @@
 .tu-musica .content #subir-album .cargar-imagen p{
     position: relative;
     margin-top: 13px;
-    margin-left: 11px;
-}
-
-.tu-musica .content #subir-album .cargar-imagen p .drag-section{
-    width: 11px;
-    height: 74px;
-    display: block;
-    background: url("./assets/drag-section.jpg") no-repeat top left;
-    position: absolute;
-    cursor: move;
+    margin-left: 7px;
 }
 
 
