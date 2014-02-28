@@ -85,7 +85,6 @@
     display: block;
     background: url("./assets/drag-section.jpg") no-repeat top left;
     position: absolute;
-    cursor: move;
 }
 
 .tu-musica .content .album-list li{
@@ -96,6 +95,7 @@
 .tu-musica .content .album-list li a{
     display: inline-block;
     margin-left: 10px;
+    cursor: move;
 }
 
 
@@ -266,6 +266,10 @@
     text-transform: lowercase;
     border: none;
     cursor: pointer;
+}
+
+.tu-musica .content .actions input[type="submit"]:hover {
+    background: #ff7400;
 }
 
 .tu-musica .content .actions input[type="checkbox"]{
