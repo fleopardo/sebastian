@@ -12,5 +12,8 @@ function readURL(input) {
 
 $("#imgInp").change(function(){
     readURL(this);
-    $('#blah').css('display','block');
+    $('#blah').css({
+    	'display' : 'block',
+    	'z-index' : '10'
+    });
 });
