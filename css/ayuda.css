@@ -12,17 +12,25 @@
 .ayuda .content .left-column{
 	width: 33.33%;
 	background: #e8e9eb;
+	float: left;
 }
 
 .ayuda .content .left-column > div{
 	border-left: 2px solid #dcdcdd;
 	border-right: 2px solid #dcdcdd;
+	border-bottom: 2px solid #dcdcdd;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	padding-bottom: 50px;
+}
+
+.ayuda .content .left-column > div > div{
 	padding: 15px;
+	margin-bottom: 10px;
 }
 
 
-.ayuda .content .left-column > div > div{
-	margin-bottom: 20px;
+.ayuda .content .left-column > div > div > div{
 	display: none;
 }
 
@@ -47,4 +55,36 @@
 
 .ayuda .content .left-column li a:hover{
 	background: #ff7400;
+	color: #fff;
+}
+
+.ayuda .content .right-column{
+	width: 60%;
+	float: right;
+}
+
+.ayuda .content .right-column .bloque-principal{
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #222;
+}
+
+.ayuda .content .right-column h2{
+	font-size: 20px;
+	line-height: 24px;
+	color: #ff7400;
+	margin-bottom: 10px;
+	text-transform: none;
+}
+
+.ayuda .content .right-column p{
+	font-size: 11px;
+	line-height: 15px;
+	margin-bottom: 15px;
+}
+
+.ayuda .content .right-column h3{
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 20px;
 }
