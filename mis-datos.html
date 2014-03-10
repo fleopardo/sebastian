@@ -58,7 +58,7 @@
 
             <div class="wrapper-content">
 
-                <form name="" id="subir-datos" method="" action="">
+                <form name="" id="subir-datos" method="" action="" class="clearfix">
 
                     <div class="left-fields">
 
@@ -98,25 +98,62 @@
                         </div>
 
                     </div>
-                    
+
                     <div class="right-fields">
                         <div class="row">
                             <!-- http://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded
-                            
+
                             http://jsfiddle.net/LvsYc/
 
                              -->
                             <label for="imgInp">Imágen de perfil</label>
                             <input type="file" id="imgInp">
 
-                            
+
                             <div class="preview-container">
-                                <img id="blah" src="#" alt="your image" />
+                                <img id="blah" src="#" alt="" />
                                 <div id="preview_ie"></div>
                             </div>
                         </div>
                     </div>
 
+                </form>
+
+                <form name="" id="metodo-pago" method="" action="" class="clearfix">
+                	<div class="clearfix">
+	                	<div class="left-fields">
+	                		<h3>Direccioná tus pagos a tu cuenta de MercadoPagoAR</h3>
+	                		<p>estendu scium, sinita porio toris ped ma nemporum fugit aborporeium lisquatiunt rehendio moluptatecta incium vereptam fuga. Harum quam restis qui ut adiae sum ipsa non nos vent ut quibust, consendit eum exeritiuntia con reprae. Raeptat ulparia quibus. Lecae volor res eum et ex eatem licabo. </p>
+
+	                		<h3>Mejorá la experiencia de tus compradores</h3>
+	                		<p>estendu scium, sinita porio toris ped ma nemporum fugit aborporeium lisquatiunt rehendio moluptatecta incium vereptam fuga. Harum quam restis qui ut adiae sum ipsa non nos vent ut quibust, consendit eum exeritiuntia con reprae. Raeptat ulparia quibus. Lecae volor res eum et ex eatem licabo.</p>
+	                	</div>
+
+	                	<div class="right-fields">
+	                		<div class="row">
+	                			<label for="clientId">Client_id</label>
+	                			<input type="text" name="" id="clientId" placeholder="Obligatorio">
+	                			<span class="field-ok"></span>
+	                		</div>
+	                		<div class="row">
+	                			<label for="clientSecret">Client_secret</label>
+	                			<input type="text" name="" id="clientSecret" placeholder="Obligatorio">
+	                			<span class="field-ok"></span>
+	                		</div>
+	                		<div class="row">
+	                			<input type="button" name="" id="" value="verificar">
+	                		</div>
+	                		<div class="row ipn-container">
+	                			<label for="ipn">IPN</label>
+	                			<input type="text" name="" id="ipn" placeholder="Opcional">
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="row last">
+	                	<label>Guardá y subí tu música</label>
+	                	<input type="button" value="guardar">
+	                	<input type="button" value="cancelar">
+	                </div>
                 </form>
             </div>
 
@@ -127,7 +164,7 @@
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/libs/jquery-ui-1.10.4.custom.min.js"></script>
     <script src="js/mis-datos.js"></script>
-    <!--[if gte IE 7]> 
+    <!--[if gte IE 7]>
         <script type="text/javascript" src="js/mis-datos-ie.js"></script>
     <![endif]-->
 </body>

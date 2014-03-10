@@ -1,5 +1,5 @@
 .mis-datos .content{
-    padding-left: 105px;
+    padding-left: 75px;
     padding-right: 20px;
     position: relative;
 }
@@ -10,7 +10,7 @@
 }
 
 .mis-datos .wrapper-content{
-    padding: 30px 20px;
+    padding: 30px 0;
     position: relative;
 }
 
@@ -50,29 +50,46 @@
 /* Formulario */
 
 .mis-datos .content #subir-datos{
-    
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #7e7e7f;
 }
 
-.mis-datos .content #subir-datos .row{
+.mis-datos .content .row{
     margin-bottom: 20px;
 }
 
-.mis-datos #subir-datos input[type="text"],
-.mis-datos #subir-datos input[type="password"]{
+.mis-datos .content .left-fields{
+    width: 380px;
+    float: left;
+}
+
+.mis-datos .content .right-fields{
+    width: 380px;
+    float: right;
+}
+
+.mis-datos #subir-datos .right-fields{
+    padding-top: 40px;
+}
+
+.mis-datos .content input[type="text"],
+.mis-datos .content input[type="password"]{
     width: 218px;
     height: 24px;
     padding: 0 10px;
     border: 1px solid #ccccce;
+    color: #ccccce;
 }
 
-.mis-datos #subir-datos .left-fields label{
+.mis-datos .content label{
     width: 125px;
     display: inline-block;
     text-align: right;
     margin-right: 5px;
 }
 
-.mis-datos #subir-datos .right-fields .row{
+.mis-datos .content .right-fields .row{
     position: relative;
 }
 
@@ -88,8 +105,83 @@
 .mis-datos #subir-datos .right-fields #blah,
 .mis-datos #subir-datos .right-fields #preview_ie{
     position: absolute;
-    width: 60px;
-    top: 0;
+    width: 100px;
+    height: 100px;
+    top: 50%;
     left: 50%;
-    margin-left: -30px;
+    margin-left: 3px;
+    margin-top: -50px;
+    z-index: 5;
+}
+
+.mis-datos #subir-datos .right-fields label{
+	position: relative;
+	z-index: 10;
+}
+
+.mis-datos #subir-datos .right-fields #blah{
+	display: none;
+}
+
+#imgInp{
+	display: none;
+}
+
+.mis-datos .content h3{
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 12px;
+}
+
+.mis-datos .content #metodo-pago p{
+	margin-bottom: 26px;
+}
+
+.mis-datos .content input[type=button]{
+	width: 86px;
+	height: 30px;
+	color: #fff;
+	border:none;
+	background: #bebfc4;
+	cursor: pointer;
+	font-size: 13px;
+	margin-left: 115px;
+}
+
+.mis-datos .content input[type=button]:hover{
+	background: #9e9fa2;
+}
+
+.mis-datos .content #metodo-pago .right-fields label{
+	width: 105px;
+}
+
+.mis-datos .content span.field-ok{
+	background: url(./assets/ic-form-ok.png) no-repeat;
+	width: 22px;
+	height: 26px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.mis-datos .content .ipn-container{
+	margin-top: 70px;
+}
+
+.mis-datos .content .row.last label{
+	margin-left: 0;
+	text-align: left;
+	font-size: 20px;
+	line-height: 26px;
+	color: #ff7400;
+	display: block;
+	width: auto;
+	font-family: 'grotesk-condensed';
+	margin-bottom: 16px;
+	letter-spacing: 1px;
+}
+
+.mis-datos .content .row.last input[type=button]{
+	margin-left: 0;
+	margin-right: 20px;
 }
