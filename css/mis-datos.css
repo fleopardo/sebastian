@@ -144,7 +144,7 @@
 	border:none;
 	background: #bebfc4;
 	cursor: pointer;
-	font-size: 13px;
+	font-size: 12px;
 	margin-left: 115px;
 }
 
@@ -171,12 +171,13 @@
 .mis-datos .content .row.last label{
 	margin-left: 0;
 	text-align: left;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 26px;
 	color: #ff7400;
 	display: block;
 	width: auto;
-	font-family: 'grotesk-condensed';
+	font-family: 'grotesk-regular';
+    font-weight: bold;
 	margin-bottom: 16px;
 	letter-spacing: 1px;
 }
