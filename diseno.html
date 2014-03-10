@@ -67,35 +67,41 @@
                 </ul>
             </nav>
 
-            <div class="wrapper-content">
+            <form>
+                <div class="wrapper-content">
 
-                <div class="container-images">
-                    <img src="img/diseno-example-1.jpg" width="504" height="398" data-color-combination="" />
-                    <img src="img/diseno-example-2.jpg" width="504" height="398" data-color-combination="" />
+                    <div class="container-images">
+                        <img src="img/diseno-example-1.jpg" width="504" height="398" />
+                    </div>
+
+                    <div class="colors-selector">
+                        <dl>
+                            <dt>Fondos</dt>
+                            <dd style="background: #fff;"><a href="img/diseno-example-2.jpg" class="selected">Blanco</a></dd>
+                            <dd style="background: #000;"><a href="img/diseno-example-1.jpg">Negro</a></dd>
+                        </dl>
+
+                        <dl>
+                            <dt>Colores</dt>
+                            <dd style="background: #ff7400;"><a href="img/diseno-example-2.jpg">Naranja</a></dd>
+                            <dd style="background: #00cad5;"><a href="img/diseno-example-1.jpg">Celeste</a></dd>
+                            <dd style="background: #27b389;"><a href="img/diseno-example-2.jpg">Verde</a></dd>
+                        </dl>
+                    </div>
+
+                    <div class="actions">
+                        <input type="submit" value="guardar">
+                    </div>
                 </div>
+            </form>
 
-                <div class="colors-selector">
-                    <dl>
-                        <dt>Fondos</dt>
-                        <dd style="background: #fff;">Blanco</dd>
-                        <dd style="background: #000;">Negro</dd>
-                    </dl>
-
-                    <dl>
-                        <dt>Colores</dt>
-                        <dd style="background: #ff7400;">Naranja</dd>
-                        <dd style="background: #00cad5;">Celeste</dd>
-                        <dd style="background: #27b389;">Verde</dd>
-                    </dl>
-                </div>
-
-            </div>
         </section>
     </div>
     <!-- /Content -->
 
     <script src="js/libs/jquery.min.js"></script>
     <script src="js/libs/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/diseno.js"></script>
 
 </body>
 </html>
