@@ -149,7 +149,13 @@
     text-indent: -200px;
     margin-left: 11px;
     cursor: pointer;
-    background: url("./assets/cargar-imagen.jpg") no-repeat center center;
+    /*background: url("./assets/cargar-imagen.jpg") no-repeat center center;*/
+}
+
+.tu-musica .content #subir-album .left-fields .cargar-imagen img{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .tu-musica .content #subir-album .left-fields .cargar-imagen input{

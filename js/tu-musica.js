@@ -5,13 +5,7 @@ function readURL(input) {
 
         reader.onload = function (e) {
 
-            $('.cargar-imagen label').css({
-                'background-image': 'url(' + e.target.result + ')',
-                '-webkit-background-size': 'cover',
-                '-moz-background-size': 'cover',
-                '-o-background-size': 'cover',
-                'background-size': 'cover'
-            });
+            $('.cargar-imagen img').attr('src', e.target.result);
 
         }
 
