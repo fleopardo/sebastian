@@ -101,26 +101,26 @@
 }
 
 
-/* Formulario */
+/* .form-rightulario */
 
-.tu-musica .content #subir-album{
+.tu-musica .content form{
     overflow: auto
 }
 
-.tu-musica .content #subir-album ::-webkit-input-placeholder { /* WebKit browsers */
+.tu-musica .content form ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #999;
 }
-.tu-musica .content #subir-album :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+.tu-musica .content form :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
     color:    #999;
 }
-.tu-musica .content #subir-album ::-moz-placeholder { /* Mozilla Firefox 19+ */
+.tu-musica .content form ::-moz-placeholder { /* Mozilla Firefox 19+ */
     color:    #999;
 }
-.tu-musica .content #subir-album :-ms-input-placeholder { /* Internet Explorer 10+ */
+.tu-musica .content form :-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    #999;
 }
 
-.tu-musica .content #subir-album .left-fields .cargar-imagen{
+.tu-musica .content .form-right .left-fields .cargar-imagen{
     width: 107px;
     height: 100px;
     position: absolute;
@@ -133,14 +133,14 @@
     border-right: 0;
 }
 
-.tu-musica .content #subir-album .left-fields .cargar-imagen p{
+.tu-musica .content .form-right .left-fields .cargar-imagen p{
     position: relative;
     margin-top: 13px;
     margin-left: 7px;
 }
 
 
-.tu-musica .content #subir-album .left-fields .cargar-imagen label{
+.tu-musica .content .form-right .left-fields .cargar-imagen label{
     display: block;
     width: 72px;
     height: 72px;
@@ -152,23 +152,23 @@
     /*background: url("./assets/cargar-imagen.jpg") no-repeat center center;*/
 }
 
-.tu-musica .content #subir-album .left-fields .cargar-imagen img{
+.tu-musica .content .form-right .left-fields .cargar-imagen img{
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.tu-musica .content #subir-album .left-fields .cargar-imagen input{
+.tu-musica .content .form-right .left-fields .cargar-imagen input{
     display: none !important;
 }
 
-.tu-musica .content #subir-album .left-fields .principal-data{
+.tu-musica .content .form-right .left-fields .principal-data{
     margin-bottom: 20px;
     padding-bottom: 15px;
     border-bottom: 2px solid #908c8a;
 }
 
-.tu-musica .content #subir-album .left-fields .cargar-cancion{
+.tu-musica .content .form-right .left-fields .cargar-cancion{
     color: #959499;
     font-size: 12px;
     padding-left: 18px;
@@ -177,67 +177,68 @@
     display: inline-block;
 }
 
-.tu-musica .content #subir-album .left-fields{
+.tu-musica .content .form-right .left-fields{
     float: left;
     margin-right: 35px;
     width: 200px;
 }
 
-.tu-musica .content #subir-album .left-fields input{
-    border: none;
-    padding: 0;
-    width: 90%;
+.tu-musica .content .form-right .left-fields input{
+    border: none !important;
+    padding: 0 !important;
+    width: 90% !important;
     display: block;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent !important;
     margin: 0 0 2px 0;
-    padding-right: 20px;
+    padding-right: 20px !important;
+    background: transparent;
 }
 
-    .tu-musica .content #subir-album .left-fields input.album{
+    .tu-musica .content .form-right .left-fields input.album{
         font-size: 18px;
         font-weight: bold;
     }
 
-    .tu-musica .content #subir-album .left-fields input.artist{
+    .tu-musica .content .form-right .left-fields input.artist{
         font-size: 13px;
         font-weight: lighter;
         line-height: 18px;
         font-style: italic;
     }
 
-    .tu-musica .content #subir-album .left-fields input.year{
+    .tu-musica .content .form-right .left-fields input.year{
         font-size: 11px;
         line-height: 16px;
     }
 
-.tu-musica .content #subir-album .left-fields input:focus{
+.tu-musica .content .form-right .left-fields input:focus{
     border-color: #eee;
     background: url("./assets/icon-edit-pen.jpg") no-repeat center right;
 }
 
-.tu-musica .content #subir-album .right-fields{
+.tu-musica .content .form-right .right-fields{
     width: 340px;
     float: right;
     margin-top: 8px;
 }
 
-.tu-musica .content #subir-album .right-fields .row{
+.tu-musica .content .form-right .row{
     border-bottom: 3px solid #ffead8;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
-.tu-musica .content #subir-album .right-fields .row:last-of-type{
+.tu-musica .content .form-right .row:last-of-type{
     border: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.tu-musica .content #subir-album .right-fields .row p{
+.tu-musica .content .form-right .row p{
     margin-bottom: 10px;
 }
 
-.tu-musica .content #subir-album .right-fields label{
+.tu-musica .content .form-right label{
     display: block;
     font-size: 12px;
     line-height: 14px;
@@ -245,55 +246,59 @@
     margin-bottom: 3px;
 }
 
-.tu-musica .content #subir-album .right-fields textarea,
-.tu-musica .content #subir-album .right-fields input{
+.tu-musica .content .form-right textarea,
+.tu-musica .content .form-right input[type="text"]{
     width: 97%;
     border: 2px solid #eee;
     padding: 3px;
 }
 
-.tu-musica .content #subir-album .right-fields textarea{
+.tu-musica .content .form-right textarea{
     height: 80px;
 }
 
-.tu-musica .content #subir-album .right-fields .suggested-price label,
-.tu-musica .content #subir-album .right-fields .suggested-price input{
+.tu-musica .content .form-right .suggested-price label,
+.tu-musica .content .form-right .suggested-price input{
     display: inline-block;
 }
 
-.tu-musica .content #subir-album .right-fields .suggested-price input[type="number"]{
+.tu-musica .content .form-right .suggested-price input[type="number"]{
     width: 30px;
 }
 
-.tu-musica .content #subir-album .right-fields .suggested-price input[type="checkbox"]{
+.tu-musica .content .form-right .suggested-price input[type="checkbox"]{
     width: auto;
 }
 
-.tu-musica .content .actions{
+.tu-musica .content .form-right .actions{
     clear:both;
     color: #828185;
     font-size: 12px;
 }
 
-.tu-musica .content .actions input[type="submit"]{
+.tu-musica .content .form-right .actions input[type="submit"]{
     background: #bebfc4;
     padding: 5px 20px;
     color: #fff;
-    text-transform: lowercase;
+    text-trans.form-right: lowercase;
     border: none;
     cursor: pointer;
 }
 
-.tu-musica .content .actions input[type="submit"]:hover {
+.tu-musica .content .form-right .actions input[type="submit"]:hover {
     background: #ff7400;
 }
 
-.tu-musica .content .actions input[type="checkbox"]{
+.tu-musica .content .form-right .actions label{
+    display: inline-block;
+}
+
+.tu-musica .content .form-right .actions input[type="checkbox"]{
     position: relative;
     top: -1px;
 }
 
-.tu-musica .content .actions .delete{
+.tu-musica .delete{
     width: 18px;
     height: 21px;
     display: block;
@@ -304,3 +309,35 @@
     cursor: pointer;
     margin-top: 2px;
 }
+
+.tu-musica .content .subir-cancion{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    width: 340px;
+    padding: 10px;
+    bottom: 0;
+    padding: 25px 20px 10px 10px;
+    z-index: 10;
+}
+
+.tu-musica #dimmer{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+}
+
+
+
+
+
+/* ESTADO OFF */
+
+/*section.content.off .wrapper-content{
+    background: #f3f3f4;
+}*/

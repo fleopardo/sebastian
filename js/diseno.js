@@ -13,3 +13,9 @@ $('.colors-selector a').on('click',function(event){
 	$('.container-images img').attr('src', $(this).attr('href'));
 });
 
+
+
+$('#select-colors').on('submit', function(event){
+    event.preventDefault();
+    console.log("envio por ajax");
+})
