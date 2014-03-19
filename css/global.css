@@ -77,7 +77,11 @@ body{
 }
 
 
-
+textarea{
+	resize: none;
+	overflow: hidden;
+	overflow-y: auto;
+}
 
 /* HEADER */
 
