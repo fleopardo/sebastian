@@ -69,6 +69,7 @@ function showSongForm(counterSong, modify){
     var songNode = $("#subir-cancion-" + counterSong),
         initialVal = songNode.find(".nombre-cancion input").val();
 
+    $('input[placeholder],textarea[placeholder]').placeholder();
 
     $('.cargar-cancion .song-load[data-position="' + counterSong + '"]').hide();
     $("section.content").addClass("off");
@@ -148,10 +149,4 @@ $(".cargar-cancion .add").on("click", function (event){
     showSongForm(counterSong);
 
 });
-
-
-
-
-/* Modificar uno existente */
-
 
