@@ -90,20 +90,24 @@ function showSongForm(counterSong, modify){
         var name = songNode.find(".nombre-cancion input").val();
         $('.cargar-cancion .song-load[data-position="' + counterSong + '"]').show();
 
-        if (modify) {
         // Modificando uno existente
 
             if (name !== "" && name !== initialVal) {
-                modifySongList(name, counterSong);
+
             }
 
         } else {
         // Creando uno nuevo
-            if (name === "" && name === initialVal) {
+            if (name === "" && name === initialVal && name === songNode.find(".nombre-cancion input").attr('placeholder')) {
                 songNode.remove();
                 alert("No guardamos la cancion porque no tiene nombre");
             }else{
-                createSongList(name, counterSong);
+
+                if (!modify) {
+                    createSongList(name, counterSong);
+                }else{
+                    modifySongList(name, counterSong);
+                }
             }
 
         }
