@@ -149,7 +149,6 @@
     text-indent: -200px;
     margin-left: 11px;
     cursor: pointer;
-    /*background: url("./assets/cargar-imagen.jpg") no-repeat center center;*/
 }
 
 .tu-musica .content .form-right .left-fields .cargar-imagen img{
@@ -168,13 +167,19 @@
     border-bottom: 2px solid #908c8a;
 }
 
-.tu-musica .content .form-right .left-fields .cargar-cancion{
-    color: #959499;
-    font-size: 12px;
+.tu-musica .content .form-right .left-fields .cargar-cancion li{
+    margin-bottom: 8px;
     padding-left: 18px;
     line-height: 40px;
     background: url("./assets/drag-section.jpg") no-repeat -1px -16px;
-    display: inline-block;
+    cursor: pointer;
+}
+
+.tu-musica .content .form-right .left-fields .cargar-cancion li,
+.tu-musica .content .form-right .left-fields .cargar-cancion a{
+    color: #959499;
+    font-size: 12px;
+    display: block;
 }
 
 .tu-musica .content .form-right .left-fields{
@@ -302,12 +307,13 @@
     width: 18px;
     height: 21px;
     display: block;
-    float: right;
     background: url("./assets/icon-eliminar.png") no-repeat top left;
     overflow: hidden;
     text-indent: -100px;
     cursor: pointer;
-    margin-top: 2px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .tu-musica .content .subir-cancion{
@@ -316,10 +322,46 @@
     right: 0;
     background: #fff;
     width: 340px;
-    padding: 10px;
     bottom: 0;
     padding: 25px 20px 10px 10px;
     z-index: 10;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.tu-musica .content .subir-cancion .row{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.tu-musica .content .subir-cancion .nombre-cancion{
+    position: absolute;
+    left: -247px;
+    top: 120px;
+    width: 251px;
+    color: #959499;
+    font-size: 12px;
+    height: 40px;
+    background: #fff url("./assets/drag-section.jpg") no-repeat 20px -16px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.tu-musica .content .subir-cancion .nombre-cancion input{
+    border: none !important;
+    padding: 0 !important;
+    display: block;
+    border-bottom: 2px solid transparent !important;
+    margin: 10px 0px 2px 38px;
+    padding-right: 20px !important;
+    background: transparent;
+    line-height: 20px;
+    width: 185px;
+}
+
+.tu-musica .content .subir-cancion .nombre-cancion input:focus{
+    border-color: #eee !important;
+    background: url("./assets/icon-edit-pen.jpg") no-repeat center right;
 }
 
 .tu-musica #dimmer{
@@ -338,6 +380,16 @@
 
 /* ESTADO OFF */
 
-/*section.content.off .wrapper-content{
+section.content.off .wrapper-content{
     background: #f3f3f4;
-}*/
+}
+
+.tu-musica section.content.off .wrapper-content .form-right .left-fields .cargar-imagen{
+    background: #f3f3f4;
+}
+
+section.content.off .cargar-cancion{
+    margin-top: 68px;
+}
+
+

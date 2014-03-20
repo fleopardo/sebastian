@@ -15,8 +15,6 @@ function readURL(input) {
     }
 }
 
-
-
 $('.cargar-imagen input[type="file"]').change(function(){
     readURL(this);
 });
@@ -30,39 +28,130 @@ $(".album-list ul").sortable({
 });
 
 
+/*
+ ** Funcionalidad para crear
+ ** borrar y modificar canciones
+ */
 
-$(".cargar-cancion").on("click", function (event){
+/* Borrar cancion */
+function borrarCancion(counterSong){
+    $("#subir-cancion-" + counterSong).remove();
+    $("section.content").removeClass("off");
+    $("#dimmer").remove();
+}
 
-    counterSong += 1;
+/* Cerrar cancion */
+function cerrarCancion(counterSong){
+    $("#dimmer").remove();
+    $("section.content").removeClass("off");
+    $("#subir-cancion-" + counterSong).addClass('DN');
+}
 
-    var form = $(".template").clone().html();
-
-    form = form.replace(/xx/g, counterSong);
-
-    $(form).appendTo($("#subir-album")).removeClass("DN");
-
-    /* Creo el dimmer */
+/* Crear el dimmer*/
+function createDimmer(){
     $('<div id="dimmer"></div>').appendTo($("section.content"));
+}
+
+/* Agregar cancion a la lista de canciones */
+function createSongList(name, referenceToSong){
+    var html = '<li class="song-load" data-position="' + referenceToSong + '"><span>' +  name + '</span></li>';
+    $(html).prependTo($('.cargar-cancion'));
+}
+
+/* Modifica el nombre de la cancion */
+function modifySongList(name, referenceToSong){
+    $('.cargar-cancion [data-position="' + referenceToSong + '"]').text(name);
+}
+
+/* muestra el div con el formulario */
+function showSongForm(counterSong, modify){
+
+    var songNode = $("#subir-cancion-" + counterSong),
+        initialVal = songNode.find(".nombre-cancion input").val();
 
 
-    /* Borrar cancion */
-    $("#subir-cancion-" + counterSong).find(".delete").one("click", function () {
-        $("#subir-cancion-" + counterSong).remove();
-        $("#dimmer").remove();
-    })
-
-    /* Cerrar formulario de la cancion */
-    $("#dimmer").one("click", function () {
-        $(this).remove();
-        console.log($("#subir-cancion-" + counterSong))
-        $("#subir-cancion-" + counterSong).hide();
-    })
-
+    $('.cargar-cancion .song-load[data-position="' + counterSong + '"]').hide();
     $("section.content").addClass("off");
 
-    event.preventDefault();
+    createDimmer();
+
+    songNode.removeClass("DN");
+
+    /* Bind Borrar cancion */
+    songNode.find(".delete").one("click", function (event) {
+        event.preventDefault();
+        borrarCancion(counterSong);
+    });
+
+    /* Bind Cerrar formulario de la cancion */
+    $("#dimmer").one("click", function () {
+
+        var name = songNode.find(".nombre-cancion input").val();
+        $('.cargar-cancion .song-load[data-position="' + counterSong + '"]').show();
+
+        if (modify) {
+        // Modificando uno existente
+
+            if (name !== "" && name !== initialVal) {
+                modifySongList(name, counterSong);
+            }
+
+        } else {
+        // Creando uno nuevo
+            if (name === "" && name === initialVal) {
+                songNode.remove();
+                alert("No guardamos la cancion porque no tiene nombre");
+            }else{
+                createSongList(name, counterSong);
+            }
+
+        }
+
+
+
+
+
+        cerrarCancion(counterSong);
+
+
+    });
+
+}
+
+
+
+/* Delegate events lista de canciones */
+$(".cargar-cancion").on("click", "li", function(event){
+
+    if ($(this).hasClass('song-load')) {
+
+        var songToShow = $(this).attr('data-position');
+
+        showSongForm(songToShow,true);
+    }
+
 });
 
 
+
+/* Crear uno nuevo */
+$(".cargar-cancion .add").on("click", function (event){
+
+    event.preventDefault();
+
+    var form = $(".template").clone().html();
+
+    counterSong += 1;
+    form = form.replace(/xx/g, counterSong);
+    $(form).appendTo($("#subir-album"))
+
+    showSongForm(counterSong);
+
+});
+
+
+
+
+/* Modificar uno existente */
 
 
