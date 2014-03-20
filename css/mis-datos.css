@@ -113,7 +113,9 @@
     margin-top: -50px;
     z-index: 5;
 }
-
+ #preview_ie {
+    FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)
+  }
 .mis-datos #subir-datos .right-fields label{
 	position: relative;
 	z-index: 10;

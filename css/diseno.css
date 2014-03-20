@@ -20,7 +20,7 @@
     margin-bottom: 30px;
 }
 
-.diseno .container-images img:first-of-type{
+.diseno .container-images img.first{
     display: block;
 }
 
@@ -33,7 +33,7 @@
     cursor: pointer;
 }
 
-.diseno .colors-selector dl:first-of-type{
+.diseno .colors-selector dl.bg-container{
     border-right: 2px solid #ccc;
     margin-right: 20px;
     padding-right: 20px;
@@ -75,4 +75,8 @@
     background: #bebfc4;
     cursor: pointer;
     font-size: 12px;
+}
+
+.diseno .content .actions input[type="submit"]:hover {
+    background: #ff7400;
 }
