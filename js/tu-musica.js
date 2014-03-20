@@ -12,18 +12,6 @@ function readURL(input) {
     }
 }
 
-if( $('html').hasClass('lt-ie10')){
-	function readURL(imgFile){
-	    var newPreview = document.querySelector('.cargar-imagen img');
-	    newPreview.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgFile.value;
-	    newPreview.style.width = "100px";
-	    newPreview.style.height = "100px";
-	    alert("IE");
-	}
-}
-
-
-
 $('.cargar-imagen input[type="file"]').change(function(){
     readURL(this);
 });
@@ -31,11 +19,13 @@ $('.cargar-imagen input[type="file"]').change(function(){
 
 
 
-
-
-
-
 $(".album-list ul").sortable({
+    update: function( event, ui ) {
+        console.log("Cambió de posición");
+    }
+});
+
+$(".cargar-cancion").sortable({
     update: function( event, ui ) {
         console.log("Cambió de posición");
     }

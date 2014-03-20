@@ -100,9 +100,6 @@
     position: relative;
     margin-bottom: 15px;
     padding: 10px 0 10px 8px;
-    border: 2px solid #dcdcdd;
-    border-right: 0;
-    background: #fff;
     border-radius: 5px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -115,7 +112,9 @@
 }
 
 .tu-musica .content .album-list li.active{
-    background-color: #fff;
+    border: 2px solid #dcdcdd;
+    border-right: 0;
+    background: #fff;
 }
 
 
@@ -410,4 +409,6 @@ section.content.off .cargar-cancion{
     margin-top: 68px;
 }
 
-
+section.content.off .album-list li.active{
+    background: #f3f3f4;
+}
