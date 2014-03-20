@@ -2,6 +2,8 @@ function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
 
+
+
         reader.onload = function (e) {
             $('#blah').attr('src', e.target.result);
         }
@@ -11,6 +13,9 @@ function readURL(input) {
 }
 
 $("#imgInp").change(function(){
+
+
+
     readURL(this);
     $('#blah').css({
     	'display' : 'block',

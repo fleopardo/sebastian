@@ -2,22 +2,36 @@ var counterSong = 0;
 
 function readURL(input) {
     if (input.files && input.files[0]) {
-
         var reader = new FileReader();
 
         reader.onload = function (e) {
-
             $('.cargar-imagen img').attr('src', e.target.result);
-
         }
 
         reader.readAsDataURL(input.files[0]);
     }
 }
 
+if( $('html').hasClass('lt-ie10')){
+	function readURL(imgFile){
+	    var newPreview = document.querySelector('.cargar-imagen img');
+	    newPreview.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgFile.value;
+	    newPreview.style.width = "100px";
+	    newPreview.style.height = "100px";
+	    alert("IE");
+	}
+}
+
+
+
 $('.cargar-imagen input[type="file"]').change(function(){
     readURL(this);
 });
+
+
+
+
+
 
 
 
@@ -69,7 +83,9 @@ function showSongForm(counterSong, modify){
     var songNode = $("#subir-cancion-" + counterSong),
         initialVal = songNode.find(".nombre-cancion input").val();
 
-    $('input[placeholder],textarea[placeholder]').placeholder();
+    if(!modify){
+	    $('input[placeholder],textarea[placeholder]').placeholder();
+	}
 
     $('.cargar-cancion .song-load[data-position="' + counterSong + '"]').hide();
     $("section.content").addClass("off");
@@ -88,9 +104,11 @@ function showSongForm(counterSong, modify){
     $("#dimmer").one("click", function () {
 
         var name = songNode.find(".nombre-cancion input").val();
+        	placeholder = songNode.find(".nombre-cancion input").attr('placeholder');
+
         $('.cargar-cancion .song-load[data-position="' + counterSong + '"]').show();
 
-        if (name === "" && name === initialVal && name === songNode.find(".nombre-cancion input").attr('placeholder')) {
+        if (name === "" || name === initialVal || name === placeholder) {
             songNode.remove();
             alert("No guardamos la cancion porque no tiene nombre");
         }else{

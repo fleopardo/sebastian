@@ -234,3 +234,9 @@ header nav li .submenu a:hover{
     padding: 80px;
 }
 
+
+
+
+#preview_ie {
+    FILTER: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)
+  }
