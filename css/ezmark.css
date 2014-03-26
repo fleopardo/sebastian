@@ -4,22 +4,18 @@
  **/
 .ez-hide { opacity: 0; filter:alpha(opacity=0); }
 .ez-checkbox {
-	background: transparent url('../images/checkbox-red.png') 0 1px no-repeat;
+	background: transparent url('assets/sp-checkbox.jpg') left top no-repeat;
 	display:inline-block;
+    width: 24px;
+    height: 21px;
+    margin-right: 5px;
 }
 
-.ez-radio {
+.ez-checkbox.ez-checked {
+    background: transparent url('assets/sp-checkbox.jpg') left bottom no-repeat;
+}
+
+/*.ez-radio {
 	background: transparent url('../images/radio-black.png') 0 1px no-repeat;
 	display:inline-block;
-}
-
-.ez-checked { background-position: 0 -18px; }
-.ez-selected { background-position: 0 -19px; }
-
-.ez-checkbox-green {
-	background: transparent url('../images/checkbox-green.png') 0 1px no-repeat;
-	display:inline-block;
-	*display: inline;
-}
-.ez-checked-green { background-position: 0 -18px; }
-.ez-checkbox, .ez-radio { zoom: 1; *display:inline; _height:30px; }
+}*/

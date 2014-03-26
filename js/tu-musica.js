@@ -16,6 +16,15 @@ $('.cargar-imagen input[type="file"]').change(function(){
     readURL(this);
 });
 
+var popup_formatos = $('.popup.formatos');
+
+if (popup_formatos.length > 0) {
+    popup_formatos.find('.close').on('click', function (event) {
+        popup_formatos.fadeOut('fast', function(){
+            popup_formatos.remove();
+        });
+    });
+}
 
 
 
@@ -31,6 +40,9 @@ $(".cargar-cancion").sortable({
     }
 });
 
+
+
+$('input[type="checkbox"]').ezMark();
 
 /*
  ** Funcionalidad para crear
@@ -83,6 +95,8 @@ function showSongForm(counterSong, modify){
     createDimmer();
 
     songNode.removeClass("DN");
+
+    $('input[type="checkbox"]').ezMark();
 
     /* Bind Borrar cancion */
     songNode.find(".delete").one("click", function (event) {
