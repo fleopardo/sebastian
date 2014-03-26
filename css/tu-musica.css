@@ -412,3 +412,87 @@ section.content.off .cargar-cancion{
 section.content.off .album-list li.active{
     background: #f3f3f4;
 }
+
+
+/* Popup TU MUSICA */
+
+.tu-musica .popup.subi-tu-musica{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+    height: 190px;
+    margin-top: -80px;
+    background: rgba(90,90,90,.75);
+    z-index: 1000;
+    color: #fff;
+    font-size: 90px;
+    font-family: 'grotesk-light-condensed';
+    line-height: 190px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.tu-musica .popup.formatos{
+    position: absolute;
+    top: 45px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(90,90,90,.75);
+    color: #fff;
+    font-family: 'grotesk-regular';
+    z-index: 1000;
+    padding: 75px;
+}
+
+
+.tu-musica .popup.formatos h3{
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    font-family: 'grotesk-light-condensed';
+    margin-bottom: 70px;
+}
+
+.tu-musica .popup.formatos ol{
+    width: 580px;
+    margin: 0 auto;
+}
+
+.tu-musica .popup.formatos li{
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+
+.tu-musica .popup.formatos li p,
+.tu-musica .popup.formatos li img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tu-musica .popup.formatos li p{
+    width: 200px;
+    margin-left: 20px;
+}
+
+.tu-musica .popup.formatos .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    color: #fff;
+    font-family: 'grotesk-light-condensed';
+}
+
+.tu-musica .popup.formatos .ayuda{
+    font-size: 24px;
+    color: #fff;
+    font-family: 'grotesk-light-condensed';
+    float: right;
+    margin-top: 15px;
+    margin-right: 110px;
+}
+
